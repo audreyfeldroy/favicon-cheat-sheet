@@ -1,7 +1,11 @@
 favicon-cheat-sheet
 ===================
 
-A painfully obsessive cheat sheet to favicon sizes/types.
+A painfully obsessive cheat sheet to favicon sizes/types. Compiled from:
+
+* http://www.jonathantneal.com/blog/understand-the-favicon/
+* http://snook.ca/archives/design/making_a_good_favicon
+* http://www.netmagazine.com/features/create-perfect-favicon
 
 The HTML
 --------
@@ -90,16 +94,7 @@ Fancy favicon tricks:
 
 * https://github.com/component/piecon
 
-Credits
--------
-
-I used the following references:
-
-* http://www.jonathantneal.com/blog/understand-the-favicon/
-* http://snook.ca/archives/design/making_a_good_favicon
-* http://www.netmagazine.com/features/create-perfect-favicon
-
 Contribute!
 -----------
 
-Send me pull requests if you have anything to add/change. If you use a reference, add it to Credits.
+Send me pull requests if you have anything to add/change.
