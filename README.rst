@@ -131,28 +131,11 @@ Helpful Tools
 
 I haven't tried them all, so use at your own risk.
 
-Basics
-~~~~~~
-
-Tools that resize favicons:
-
-* http://faviconer.com
-* https://github.com/abrkn/icon
-
-Creating .ico files:
-
-* http://www.imagemagick.org/Usage/thumbnails/#favicon
-
-Fancy
-~~~~~
-
-Tools for dynamically setting favicons:
-
-* https://github.com/HenrikJoreteg/favicon-setter
-
-Fancy favicon tricks:
-
-* https://github.com/component/piecon
+* Resize favicons: http://faviconer.com
+* More resizing: https://github.com/abrkn/icon
+* Creating .ico files: http://www.imagemagick.org/Usage/thumbnails/#favicon
+* Dynamically setting favicons: https://github.com/HenrikJoreteg/favicon-setter
+* Fancy favicon tricks: https://github.com/component/piecon
 
 Contribute!
 -----------
