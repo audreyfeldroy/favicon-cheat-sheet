@@ -65,8 +65,9 @@ Size    Type       Purpose
 57x57   .png       Standard iOS home screen (iPod Touch, iPhone first generation to 3G)
 72x72   .png       iPad home screen icon
 96x96   .png       GoogleTV favicon
-114x114 .png       iPhone 4+ touch icon
-144x144 .png       IE10 Metro tile for pinned site, iPad retina touch icon
+120x120 .png       iPhone retina touch icon (Change for iOS 7: up from 114x114)
+144x144 .png       IE10 Metro tile for pinned site
+152x152 .png       iPad retina touch icon (Change for iOS 7: up from 144x144)
 128px   .png       Chrome Web Store icon
 195x195 .png       Opera Speed Dial icon
 ======= ========== =======================================================================
