@@ -21,21 +21,44 @@ Insert into `<head>`::
     <!--[if IE]><link rel="shortcut icon" href="path/to/favicon.ico"><![endif]-->
     <!-- or, set /favicon.ico for IE10 win -->
 
-Optional if you're obsessive
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Optional
+~~~~~~~~
 
-Also add the following: 
+You probably also want the following: 
 
 1. Touch icon for iOS 2.0+ and Android 2.1+ (really)::
 
     <link rel="apple-touch-icon-precomposed" href="path/to/touchicon.png">
 
-   Note: If you use the non-precomposed 
-   `<link rel="apple-touch-icon" href="path/to/touchicon.png">` instead, iOS will add
-   rounded corners, drop shadow, and reflective shine. But then it will only
-   work on Android 2.2+.
+   Note: Don't use non-precomposed. If you do use
+   `<link rel="apple-touch-icon" href="path/to/touchicon.png">` instead, iOS
+   will add rounded corners, drop shadow, and reflective shine. But you/your
+   designer will be frustrated with the default results, and the icon will
+   only work on Android 2.2+.
 
-2. IE 10 Metro tile icon so that the page can be pinned to Windows users' Start screen::
+If you're obsessive, you want all this too:
+
+2. Largest to smallest apple-touch-icons::
+
+    <!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152-precomposed.png">
+
+    <!-- For iPad with high-resolution Retina display running iOS ≤ 6: -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
+
+    <!-- For iPhone with high-resolution Retina display running iOS ≥ 7: -->
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120-precomposed.png">
+
+    <!-- For iPhone with high-resolution Retina display running iOS ≤ 6: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+
+    <!-- For first- and second-generation iPad: -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
+
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+
+3. IE 10 Metro tile icon so that the page can be pinned to Windows users' Start screen::
 
     <meta name="msapplication-TileColor" content="#D83434">
     <meta name="msapplication-TileImage" content="path/to/tileicon.png">
