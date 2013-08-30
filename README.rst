@@ -121,6 +121,7 @@ Size    Purpose
 ======= =======================================================================
 16x16   Default for older systems.
 32x32   New tab page in IE, taskbar button in Win 7+, Safari Read Later sidebar
+48x48   TODO some sites recommend this. Why?
 ======= =======================================================================
 
 The easiest way to do this at the command line is...TODO (ImageMagick?)
