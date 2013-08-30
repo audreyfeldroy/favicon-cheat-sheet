@@ -38,27 +38,35 @@ You probably also want the following:
 
 If you're obsessive, you want all this too:
 
-2. Largest to smallest apple-touch-icons::
+2. Favicons targeted to specific sizes (TODO: fix this to match the below sizes)::
+
+    <link rel="icon" href="favicon-16.png" sizes="16x16">
+    <link rel="icon" href="favicon-32.png" sizes="32x32">
+    <link rel="icon" href="favicon-48.png" sizes="48x48">
+    <link rel="icon" href="favicon-64.png" sizes="64x64">
+    <link rel="icon" href="favicon-128.png" sizes="128x128">
+
+3. Largest to smallest apple-touch-icons::
 
     <!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="favicon-152.png">
 
     <!-- For iPad with high-resolution Retina display running iOS ≤ 6: -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicon-144.png">
 
     <!-- For iPhone with high-resolution Retina display running iOS ≥ 7: -->
-    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="favicon-120.png">
 
     <!-- For iPhone with high-resolution Retina display running iOS ≤ 6: -->
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicon-114.png">
 
     <!-- For first- and second-generation iPad: -->
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicon-72.png">
 
     <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
-    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="favicon-57.png">
 
-3. IE 10 Metro tile icon so that the page can be pinned to Windows users' Start screen::
+4. IE 10 Metro tile icon so that the page can be pinned to Windows users' Start screen::
 
     <meta name="msapplication-TileColor" content="#D83434">
     <meta name="msapplication-TileImage" content="path/to/tileicon.png">
@@ -68,41 +76,40 @@ The Images
 
 Create at least these:
 
-======= ========== =======================================================================
-Size    Type       Purpose
-======= ========== =======================================================================
-16x16   .png       
-32x32   .png       New tab page in IE, taskbar button in Win 7+, Safari Read Later sidebar
-various .ico       
-======= ========== =======================================================================
+======== =============== =======================================================================
+Size     Name            Purpose
+======== =============== =======================================================================
+16x16    favicon-16.png       
+32x32    favicon-32.png  New tab page in IE, taskbar button in Win 7+, Safari Read Later sidebar
+multiple favicon.ico     See below. Yes, it's 1 file with multiple sizes.
+======== =============== =======================================================================
 
 If you also sort of care about iOS and Android but are lazy:
 
-======= ========== =======================================================================
-Size    Type       Purpose
-======= ========== =======================================================================
-152x152 .png       General use iOS/Android icon, auto-downscaled by devices.
-======= ========== =======================================================================
+======= =============== =======================================================================
+Size    Name            Purpose
+======= =============== =======================================================================
+152x152 favicon-152.png General use iOS/Android icon, auto-downscaled by devices.
+======= =============== =======================================================================
 
 But keep in mind that icons with complex detail often don't downscale well.
 Often you have to tweak subtle design details for smaller sizes.
 
 If you're obsessive, create these too:
 
-======= ========== =======================================================================
-Size    Type       Purpose
-======= ========== =======================================================================
-24x24   .png       IE 9 pinned site
-32x32   .png       New tab page in IE, taskbar button in Win 7+, Safari Read Later sidebar
-57x57   .png       Standard iOS home screen (iPod Touch, iPhone first generation to 3G)
-72x72   .png       iPad home screen icon
-96x96   .png       GoogleTV favicon
-120x120 .png       iPhone retina touch icon (Change for iOS 7: up from 114x114)
-144x144 .png       IE10 Metro tile for pinned site
-152x152 .png       iPad retina touch icon (Change for iOS 7: up from 144x144)
-128px   .png       Chrome Web Store icon
-195x195 .png       Opera Speed Dial icon
-======= ========== =======================================================================
+======= =============== =======================================================================
+Size    Name            Purpose
+======= =============== =======================================================================
+24x24   favicon-24.png  IE 9 pinned site
+57x57   favicon-57.png  Standard iOS home screen (iPod Touch, iPhone first generation to 3G)
+72x72   favicon-72.png  iPad home screen icon
+96x96   favicon-96.png  GoogleTV favicon
+120x120 favicon-120.png iPhone retina touch icon (Change for iOS 7: up from 114x114)
+128x128 favicon-128.png Chrome Web Store icon
+144x144 favicon-144.png IE10 Metro tile for pinned site
+152x152 favicon-152.png iPad retina touch icon (Change for iOS 7: up from 144x144)
+195x195 favicon-195.png Opera Speed Dial icon
+======= =============== =======================================================================
 
 ICO File
 --------
@@ -112,7 +119,7 @@ An .ico file contains an icon at multiple sizes. In your .ico, create these:
 ======= =======================================================================
 Size    Purpose
 ======= =======================================================================
-16x16   
+16x16   Default for older systems.
 32x32   New tab page in IE, taskbar button in Win 7+, Safari Read Later sidebar
 ======= =======================================================================
 
