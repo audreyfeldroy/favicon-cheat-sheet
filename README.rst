@@ -54,6 +54,16 @@ Size    Type       Purpose
 various .ico       
 ======= ========== =======================================================================
 
+If you also sort of care about iOS and Android but are lazy:
+
+======= ========== =======================================================================
+Size    Type       Purpose
+======= ========== =======================================================================
+152x152 .png       iPad retina touch icon, to be scaled down for various devices/sizes
+======= ========== =======================================================================
+
+But keep in mind that icons with complex detail often don't downscale well.
+Often you have to tweak subtle design details for smaller sizes.
 
 If you're obsessive, create these too:
 
