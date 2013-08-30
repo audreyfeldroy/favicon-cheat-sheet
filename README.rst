@@ -15,20 +15,24 @@ The HTML
 Basics
 ~~~~~~
 
-Insert into `<head>`::
+Insert into `<head>`:
 
-    <link rel="icon" href="path/to/favicon.png">
-    <!--[if IE]><link rel="shortcut icon" href="path/to/favicon.ico"><![endif]-->
-    <!-- or, set /favicon.ico for IE10 win -->
+    .. code-block:: html
+
+        <link rel="icon" href="path/to/favicon.png">
+        <!--[if IE]><link rel="shortcut icon" href="path/to/favicon.ico"><![endif]-->
+        <!-- or, set /favicon.ico for IE10 win -->
 
 Optional
 ~~~~~~~~
 
 You probably also want the following: 
 
-1. Touch icon for iOS 2.0+ and Android 2.1+ (really)::
+1. Touch icon for iOS 2.0+ and Android 2.1+ (really):
 
-    <link rel="apple-touch-icon-precomposed" href="path/to/touchicon.png">
+    .. code-block:: html
+
+        <link rel="apple-touch-icon-precomposed" href="path/to/touchicon.png">
 
    Note: Don't use non-precomposed. If you do use
    `<link rel="apple-touch-icon" href="path/to/touchicon.png">` instead, iOS
@@ -38,38 +42,44 @@ You probably also want the following:
 
 If you're obsessive, you want all this too:
 
-2. Favicons targeted to specific sizes (TODO: fix this to match the below sizes)::
+2. Favicons targeted to specific sizes (TODO: fix this to match the below sizes):
 
-    <link rel="icon" href="favicon-16.png" sizes="16x16">
-    <link rel="icon" href="favicon-32.png" sizes="32x32">
-    <link rel="icon" href="favicon-48.png" sizes="48x48">
-    <link rel="icon" href="favicon-64.png" sizes="64x64">
-    <link rel="icon" href="favicon-128.png" sizes="128x128">
+    .. code-block:: html
 
-3. Largest to smallest apple-touch-icons::
+        <link rel="icon" href="favicon-16.png" sizes="16x16">
+        <link rel="icon" href="favicon-32.png" sizes="32x32">
+        <link rel="icon" href="favicon-48.png" sizes="48x48">
+        <link rel="icon" href="favicon-64.png" sizes="64x64">
+        <link rel="icon" href="favicon-128.png" sizes="128x128">
 
-    <!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="favicon-152.png">
+3. Largest to smallest apple-touch-icons:
 
-    <!-- For iPad with high-resolution Retina display running iOS ≤ 6: -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicon-144.png">
+    .. code-block:: html
 
-    <!-- For iPhone with high-resolution Retina display running iOS ≥ 7: -->
-    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="favicon-120.png">
+        <!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="favicon-152.png">
 
-    <!-- For iPhone with high-resolution Retina display running iOS ≤ 6: -->
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicon-114.png">
+        <!-- For iPad with high-resolution Retina display running iOS ≤ 6: -->
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicon-144.png">
 
-    <!-- For first- and second-generation iPad: -->
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicon-72.png">
+        <!-- For iPhone with high-resolution Retina display running iOS ≥ 7: -->
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="favicon-120.png">
 
-    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
-    <link rel="apple-touch-icon-precomposed" href="favicon-57.png">
+        <!-- For iPhone with high-resolution Retina display running iOS ≤ 6: -->
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicon-114.png">
 
-4. IE 10 Metro tile icon so that the page can be pinned to Windows users' Start screen::
+        <!-- For first- and second-generation iPad: -->
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicon-72.png">
 
-    <meta name="msapplication-TileColor" content="#D83434">
-    <meta name="msapplication-TileImage" content="path/to/tileicon.png">
+        <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+        <link rel="apple-touch-icon-precomposed" href="favicon-57.png">
+
+4. IE 10 Metro tile icon so that the page can be pinned to Windows users' Start screen:
+
+    .. code-block:: html
+
+        <meta name="msapplication-TileColor" content="#D83434">
+        <meta name="msapplication-TileImage" content="path/to/tileicon.png">
 
 The Images
 ----------
