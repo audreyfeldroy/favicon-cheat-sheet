@@ -10,6 +10,9 @@ A painfully obsessive cheat sheet to favicon sizes/types. Compiled from:
 The HTML
 --------
 
+Basics
+~~~~~~
+
 Insert into `<head>`::
 
     <link rel="apple-touch-icon" href="path/to/touchicon.png">
@@ -17,7 +20,12 @@ Insert into `<head>`::
     <!--[if IE]><link rel="shortcut icon" href="path/to/favicon.ico"><![endif]-->
     <!-- or, set /favicon.ico for IE10 win -->
 
-To add an IE 10 Metro tile icon (for pinning to Start screen)::
+Optional if you're obsessive
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Also add the following: 
+
+1. IE 10 Metro tile icon so that the page can be pinned to Windows users' Start screen::
 
     <meta name="msapplication-TileColor" content="#D83434">
     <meta name="msapplication-TileImage" content="path/to/tileicon.png">
