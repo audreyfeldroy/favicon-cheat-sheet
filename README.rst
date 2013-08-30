@@ -6,6 +6,8 @@ A painfully obsessive cheat sheet to favicon sizes/types. Compiled from:
 * http://www.jonathantneal.com/blog/understand-the-favicon/
 * http://snook.ca/archives/design/making_a_good_favicon
 * http://www.netmagazine.com/features/create-perfect-favicon
+* http://mathiasbynens.be/notes/touch-icons
+* http://www.ravelrumba.com/blog/android-apple-touch-icon/
 
 The HTML
 --------
@@ -15,7 +17,6 @@ Basics
 
 Insert into `<head>`::
 
-    <link rel="apple-touch-icon" href="path/to/touchicon.png">
     <link rel="icon" href="path/to/favicon.png">
     <!--[if IE]><link rel="shortcut icon" href="path/to/favicon.ico"><![endif]-->
     <!-- or, set /favicon.ico for IE10 win -->
@@ -25,7 +26,17 @@ Optional if you're obsessive
 
 Also add the following: 
 
-1. IE 10 Metro tile icon so that the page can be pinned to Windows users' Start screen::
+1. Touch icon for iOS 2.0+ and Android 2.1+ (really)::
+
+    <link rel="apple-touch-icon-precomposed" href="path/to/touchicon.png">
+
+.. note:: If you add the non-precomposed version like the following, iOS will add
+   rounded corners, drop shadow, and reflective shine. But then it will only
+   work on Android 2.2+::
+
+    <link rel="apple-touch-icon" href="path/to/touchicon.png">
+
+2. IE 10 Metro tile icon so that the page can be pinned to Windows users' Start screen::
 
     <meta name="msapplication-TileColor" content="#D83434">
     <meta name="msapplication-TileImage" content="path/to/tileicon.png">
