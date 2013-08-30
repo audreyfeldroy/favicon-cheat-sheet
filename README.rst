@@ -30,11 +30,10 @@ Also add the following:
 
     <link rel="apple-touch-icon-precomposed" href="path/to/touchicon.png">
 
-.. note:: If you add the non-precomposed version like the following, iOS will add
+   Note: If you use the non-precomposed 
+   `<link rel="apple-touch-icon" href="path/to/touchicon.png">` instead, iOS will add
    rounded corners, drop shadow, and reflective shine. But then it will only
-   work on Android 2.2+::
-
-    <link rel="apple-touch-icon" href="path/to/touchicon.png">
+   work on Android 2.2+.
 
 2. IE 10 Metro tile icon so that the page can be pinned to Windows users' Start screen::
 
@@ -59,7 +58,7 @@ If you also sort of care about iOS and Android but are lazy:
 ======= ========== =======================================================================
 Size    Type       Purpose
 ======= ========== =======================================================================
-152x152 .png       iPad retina touch icon, to be scaled down for various devices/sizes
+152x152 .png       General use iOS/Android icon, auto-downscaled by devices.
 ======= ========== =======================================================================
 
 But keep in mind that icons with complex detail often don't downscale well.
