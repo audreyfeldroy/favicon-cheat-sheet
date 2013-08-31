@@ -35,12 +35,6 @@ You probably also want the following:
 
         <link rel="apple-touch-icon-precomposed" href="path/to/favicon-152.png">
 
-   Note: Don't use non-precomposed. If you do use
-   `<link rel="apple-touch-icon" href="path/to/favicon-152.png">` instead, iOS
-   will add rounded corners, drop shadow, and reflective shine. But you/your
-   designer will be frustrated with the default results, and the icon will
-   only work on Android 2.2+.
-
 If you're obsessive, you want all this too:
 
 2. Favicons targeted to specific sizes (TODO: fix this to match the below sizes):
@@ -202,6 +196,15 @@ Boilerplate) rely on this assumption, but:
 * Not hard-coding names as `apple-touch-icon` clears up confusion as to whether
   the same icons can be reused for other purposes as-is, e.g. reusing
   favicon-144.png for Windows pinned site.
+
+Why use iOS precomposed icons?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+iOS non-precomposed icons add rounded corners, drop shadow, and reflective
+shine. Sounds great in theory, but in practice the results can be very
+frustrating, especially to designers.
+
+Also, non-precomposed icons don't work with Android 2.1.
 
 Contribute!
 -----------
