@@ -139,7 +139,8 @@ How?
 * The easiest way to do this at the command line is...TODO (ImageMagick?)
 * GIMP or Photoshop work too.
 
-If you're obsessive, also include these sizes in your .ico:
+If you're obsessive and don't mind 1-3kb extra size, also include these sizes
+in your .ico:
 
 ======= =======================================================================
 Size    Purpose
