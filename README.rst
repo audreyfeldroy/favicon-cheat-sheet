@@ -165,8 +165,16 @@ I haven't tried them all, so use at your own risk.
 Tips
 ----
 
-* Some Firefox versions require absolute paths
-* If you don't see it, clear cache (Ctrl+F5 or Ctrl+Shift+R)
+* Some Firefox versions require absolute paths.
+* If you don't see it, clear cache (Ctrl+F5 or Ctrl+Shift+R).
+
+Misc. Justifications
+--------------------
+
+* If you don't specify `<link>` tags, iOS looks for files prefixed with
+  `apple-touch-icon` or `apple-touch-icon-precomposed`. Many (e.g. HTML5
+  Boilerplate) rely on this assumption, but explicitly specifying `<link>`
+  tags is clearer.
 
 Contribute!
 -----------
