@@ -177,6 +177,7 @@ Why not prefix with "apple-touch-icon"?
 If you don't specify `<link>` tags, iOS looks for files prefixed with
 `apple-touch-icon` or `apple-touch-icon-precomposed`. Many (e.g. HTML5
 Boilerplate) rely on this assumption, but:
+
 * Explicitly specifying `<link>` tags is clearer.
 * Not hard-coding names as `apple-touch-icon` clears up confusion as to whether
   the same icons can be reused for other purposes as-is, e.g. reusing
