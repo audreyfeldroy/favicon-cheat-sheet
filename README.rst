@@ -168,26 +168,18 @@ Tips
 FAQ
 ---
 
-Is it true that favicons should be in the site root?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
+**Is it true that favicons should be in the site root?**
 No, that's only if you don't explicitly specify the browser/device-specific
 `<link>` tags with a favicon path. See https://en.wikipedia.org/wiki/Favicon.ico.
 
-Is it true that the png has to be named favicon.png?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
+**Is it true that the png has to be named favicon.png?**
 No, this has never been true as far as I can tell from my obsessive research.
 
-Is it true that the ico has to be named favicon.ico?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
+**Is it true that the ico has to be named favicon.ico?**
 If you don't explicitly specify its `<link>` tag, yes. Explicitness is best,
 so we both name it `favicon.ico` and explicitly specify the `<link>` tag.
 
-Why not prefix with "apple-touch-icon"?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
+**Why not prefix with "apple-touch-icon"?**
 If you don't specify `<link>` tags, iOS looks for files prefixed with
 `apple-touch-icon` or `apple-touch-icon-precomposed`. Many (e.g. HTML5
 Boilerplate) rely on this assumption, but:
@@ -197,14 +189,12 @@ Boilerplate) rely on this assumption, but:
   the same icons can be reused for other purposes as-is, e.g. reusing
   favicon-144.png for Windows pinned site.
 
-Why use iOS precomposed icons?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Why use iOS precomposed icons?**
 
-iOS non-precomposed icons add rounded corners, drop shadow, and reflective
-shine. Sounds great in theory, but in practice the results can be very
-frustrating, especially to designers.
-
-Also, non-precomposed icons don't work with Android 2.1.
+* iOS non-precomposed icons add rounded corners, drop shadow, and reflective
+  shine. Sounds great in theory, but in practice the results can be very
+  frustrating, especially to designers.
+* Non-precomposed icons don't work with Android 2.1.
 
 Contribute!
 -----------
