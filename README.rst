@@ -4,6 +4,7 @@ favicon-cheat-sheet
 A painfully obsessive cheat sheet to favicon sizes/types. Compiled from:
 
 * http://www.jonathantneal.com/blog/understand-the-favicon/
+* https://en.wikipedia.org/wiki/Favicon.ico
 * http://snook.ca/archives/design/making_a_good_favicon
 * http://www.netmagazine.com/features/create-perfect-favicon
 * http://mathiasbynens.be/notes/touch-icons
@@ -22,7 +23,6 @@ Insert into `<head>`:
 
         <link rel="icon" href="/path/to/favicon-96.png">
         <!--[if IE]><link rel="shortcut icon" href="/path/to/favicon.ico"><![endif]-->
-        <!-- or, set /favicon.ico for IE10 win -->
 
 Optional
 ~~~~~~~~
@@ -177,7 +177,19 @@ FAQ
 Is it true that favicons should be in the site root?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Only if you don't specify `<link>` tags with a favicon path.
+Only if you don't explicitly specify the browser/device-specific `<link>`
+tags with a favicon path.
+
+Is it true that the png has to be named favicon.png?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+No.
+
+Is it true that the ico has to be named favicon.ico?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If you don't explicitly specify its `<link>` tag, yes. Explicitness is best,
+so we both name it `favicon.ico` and explicitly specify the `<link>` tag.
 
 Why not prefix with "apple-touch-icon"?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
