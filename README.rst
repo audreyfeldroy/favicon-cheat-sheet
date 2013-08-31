@@ -8,6 +8,7 @@ A painfully obsessive cheat sheet to favicon sizes/types. Compiled from:
 * http://www.netmagazine.com/features/create-perfect-favicon
 * http://mathiasbynens.be/notes/touch-icons
 * http://www.ravelrumba.com/blog/android-apple-touch-icon/
+* http://msdn.microsoft.com/en-us/library/ie/gg491740(v=vs.85).aspx
 
 The HTML
 --------
@@ -84,15 +85,15 @@ If you're obsessive, you want all this too:
 The Images
 ----------
 
-Create at least these:
+Create at least this:
 
 ======== =============== =======================================================================
 Size     Name            Purpose
 ======== =============== =======================================================================
-16x16    favicon-16.png       
-32x32    favicon-32.png  New tab page in IE, taskbar button in Win 7+, Safari Read Later sidebar
-multiple favicon.ico     See below. Yes, it's 1 file with multiple sizes.
+multiple favicon.ico     New tab page in IE, taskbar button in Win 7+, Safari Read Later sidebar
 ======== =============== =======================================================================
+
+See below. Yes, it's 1 file with multiple sizes.
 
 If you also sort of care about iOS and Android but are lazy:
 
@@ -110,7 +111,6 @@ If you're obsessive, create these too:
 ======= =============== =======================================================================
 Size    Name            Purpose
 ======= =============== =======================================================================
-24x24   favicon-24.png  IE 9 pinned site
 57x57   favicon-57.png  Standard iOS home screen (iPod Touch, iPhone first generation to 3G)
 72x72   favicon-72.png  iPad home screen icon
 96x96   favicon-96.png  GoogleTV favicon
@@ -129,18 +129,32 @@ An .ico file contains an icon at multiple sizes. In favicon.ico, create these:
 ======= =======================================================================
 Size    Purpose
 ======= =======================================================================
-16x16   Default for older systems.
+16x16   IE9 address bar, Pinned site Jump List/Toolbar/Overlay
 32x32   New tab page in IE, taskbar button in Win 7+, Safari Read Later sidebar
-48x48   TODO some sites recommend this. Why?
 ======= =======================================================================
 
-The easiest way to do this at the command line is...TODO (ImageMagick?)
+How?
+~~~~
+
+* The easiest way to do this at the command line is...TODO (ImageMagick?)
+* GIMP or Photoshop work too.
+
+If you're obsessive, also include these sizes in your .ico:
+
+======= =======================================================================
+Size    Purpose
+======= =======================================================================
+48x48   Windows site icons (no specifics given by MSDN)
+64x64   Windows site icons (no specifics given by MSDN)
+======= =======================================================================
+
 
 Helpful Tools
 -------------
 
 I haven't tried them all, so use at your own risk.
 
+* MSDN recommends this web-based .ico creator: http://www.xiconeditor.com
 * Resize favicons: http://faviconer.com
 * More resizing: https://github.com/abrkn/icon
 * Creating .ico files: http://www.imagemagick.org/Usage/thumbnails/#favicon
