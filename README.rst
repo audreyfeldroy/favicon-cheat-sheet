@@ -211,4 +211,5 @@ it's the simplest choice.
 Contribute!
 -----------
 
-Send me pull requests if you have anything to add/change.
+Send pull requests if you have anything to add/change, providing citations
+and justification. I'd love to see this improve.
