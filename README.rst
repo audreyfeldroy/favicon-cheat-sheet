@@ -21,33 +21,43 @@ Insert into `<head>`:
 
     .. code-block:: html
 
-        <link rel="icon" href="/path/to/favicon-96.png">
+        <link rel="icon" sizes="16x16 32x32" href="/path/to/favicon.ico">
         <!--[if IE]><link rel="shortcut icon" href="/path/to/favicon.ico"><![endif]-->
 
-Optional
-~~~~~~~~
+This is optimized for the best experience in every desktop browser:
 
-You probably also want the following: 
+ * Most browsers use the standard HTML5-style line 1.
+ * IE 9 and below will use line 2, the inner part of which follows the spec in http://msdn.microsoft.com/en-us/library/ie/gg491740(v=vs.85).aspx
+ * Note: IE 10 doesn't support conditional comments. There is no documentation
+   on whether IE 10 has HTML5-style icon declaration support. TODO: verify
+   whether IE 10 will use line 1.
 
-1. Touch icon for iOS 2.0+ and Android 2.1+ (really):
+Optional But Encouraged
+~~~~~~~~~~~~~~~~~~~~~~~
+
+You probably also want the following:
+
+1. Touch icon for iOS 2.0+ and Android 2.1+:
 
     .. code-block:: html
 
         <link rel="apple-touch-icon-precomposed" href="path/to/favicon-152.png">
 
-If you're obsessive, you want all this too:
-
-2. Favicons targeted to specific sizes (TODO: fix this to match the below sizes):
+2. IE 10 Metro tile icon (Metro equivalent of apple-touch-icon):
 
     .. code-block:: html
 
-        <link rel="icon" href="/path/to/favicon-16.png" sizes="16x16">
-        <link rel="icon" href="/path/to/favicon-32.png" sizes="32x32">
-        <link rel="icon" href="/path/to/favicon-48.png" sizes="48x48">
-        <link rel="icon" href="/path/to/favicon-64.png" sizes="64x64">
-        <link rel="icon" href="/path/to/favicon-128.png" sizes="128x128">
+        <meta name="msapplication-TileColor" content="#FFFFFF">
+        <meta name="msapplication-TileImage" content="/path/to/favicon-144.png">
 
-3. Largest to smallest apple-touch-icons:
+   Replace #FFFFFF with your desired tile color.
+
+Very Optional, for the Obsessive
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If you're obsessive, you want all this too:
+
+1. Largest to smallest apple-touch-icons:
 
     .. code-block:: html
 
@@ -69,29 +79,25 @@ If you're obsessive, you want all this too:
         <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
         <link rel="apple-touch-icon-precomposed" href="/path/to/favicon-57.png">
 
-4. IE 10 Metro tile icon so that the page can be pinned to Windows users' Start screen:
+
+2. Favicons targeted to any additional png sizes that you add that aren't covered above:
 
     .. code-block:: html
 
-        <meta name="msapplication-TileColor" content="#D83434">
-        <meta name="msapplication-TileImage" content="/path/to/favicon-144.png">
+        <link rel="icon" href="/path/to/favicon-32.png" sizes="32x32">
 
 The Images
 ----------
 
 Create at least this:
 
-======== =============== =======================================================================
-Size     Name            Purpose
-======== =============== =======================================================================
-multiple favicon.ico     Default required by IE. Chrome and Safari may pick ico over png, sadly.
-96x96    favicon-96.png  PNG will be chosen as default for smarter browsers/versions.
-======== =============== =======================================================================
+============= =============== =======================================================================
+Sizes         Name            Purpose
+============= =============== =======================================================================
+16x16 & 32x32 favicon.ico     Default required by IE. Chrome and Safari may pick ico over png, sadly.
+============= =============== =======================================================================
 
 More about favicon.ico below. Yes, it's 1 file with multiple sizes.
-
-96x96 because Jonathan T. Neal's favicon blog post picks it. TODO: figure out why?!
-(Side note: it's also the GoogleTV favicon size.)
 
 If you also sort of care about iOS and Android but are lazy:
 
@@ -109,8 +115,10 @@ If you're obsessive, create these too:
 ======= =============== =======================================================================
 Size    Name            Purpose
 ======= =============== =======================================================================
+32x32   favicon-32.png  Certain old but not too old Chrome versions mishandle ico
 57x57   favicon-57.png  Standard iOS home screen (iPod Touch, iPhone first generation to 3G)
 72x72   favicon-72.png  iPad home screen icon
+96x96   favicon-96.png  GoogleTV icon
 120x120 favicon-120.png iPhone retina touch icon (Change for iOS 7: up from 114x114)
 128x128 favicon-128.png Chrome Web Store icon
 144x144 favicon-144.png IE10 Metro tile for pinned site
@@ -121,7 +129,7 @@ Size    Name            Purpose
 ICO File
 --------
 
-An .ico file contains an icon at multiple sizes. In favicon.ico, create these:
+An .ico file contains an icon at multiple sizes. In favicon.ico, create at least these:
 
 ======= =======================================================================
 Size    Purpose
@@ -129,12 +137,6 @@ Size    Purpose
 16x16   IE9 address bar, Pinned site Jump List/Toolbar/Overlay
 32x32   New tab page in IE, taskbar button in Win 7+, Safari Read Later sidebar
 ======= =======================================================================
-
-How?
-~~~~
-
-* The easiest way to do this at the command line is...TODO (ImageMagick?)
-* GIMP or Photoshop work too.
 
 If you're obsessive and don't mind 1-3kb extra size, also include these sizes
 in your .ico:
@@ -175,6 +177,9 @@ Forcing a Favicon Refresh
 
 FAQ
 ---
+
+**Why use png in addition to ico?**
+
 
 **Is it true that favicons should be in the site root?**
 No, that's only if you don't explicitly specify the browser/device-specific
