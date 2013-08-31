@@ -20,7 +20,7 @@ Insert into `<head>`:
 
     .. code-block:: html
 
-        <link rel="icon" href="/path/to/favicon.png">
+        <link rel="icon" href="/path/to/favicon-96.png">
         <!--[if IE]><link rel="shortcut icon" href="/path/to/favicon.ico"><![endif]-->
         <!-- or, set /favicon.ico for IE10 win -->
 
@@ -90,10 +90,14 @@ Create at least this:
 ======== =============== =======================================================================
 Size     Name            Purpose
 ======== =============== =======================================================================
-multiple favicon.ico     Default required by IE. Firefox and Chrome friendly too.
+multiple favicon.ico     Default required by IE. Chrome and Safari may pick ico over png, sadly.
+96x96    favicon-96.png  PNG will be chosen as default for smarter browsers/versions.
 ======== =============== =======================================================================
 
-See below. Yes, it's 1 file with multiple sizes.
+More about favicon.ico below. Yes, it's 1 file with multiple sizes.
+
+96x96 because Jonathan T. Neal's favicon blog post picks it. TODO: figure out why?!
+(Side note: it's also the GoogleTV favicon size.)
 
 If you also sort of care about iOS and Android but are lazy:
 
@@ -113,7 +117,6 @@ Size    Name            Purpose
 ======= =============== =======================================================================
 57x57   favicon-57.png  Standard iOS home screen (iPod Touch, iPhone first generation to 3G)
 72x72   favicon-72.png  iPad home screen icon
-96x96   favicon-96.png  GoogleTV favicon
 120x120 favicon-120.png iPhone retina touch icon (Change for iOS 7: up from 114x114)
 128x128 favicon-128.png Chrome Web Store icon
 144x144 favicon-144.png IE10 Metro tile for pinned site
@@ -171,6 +174,11 @@ Tips
 FAQ
 ---
 
+Is it true that favicons should be in the site root?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Only if you don't specify `<link>` tags with a favicon path.
+
 Why not prefix with "apple-touch-icon"?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -178,7 +186,7 @@ If you don't specify `<link>` tags, iOS looks for files prefixed with
 `apple-touch-icon` or `apple-touch-icon-precomposed`. Many (e.g. HTML5
 Boilerplate) rely on this assumption, but:
 
-* Explicitly specifying `<link>` tags is clearer.
+* Explicitly specifying `<link>` tags is clearer and supported by Apple.
 * Not hard-coding names as `apple-touch-icon` clears up confusion as to whether
   the same icons can be reused for other purposes as-is, e.g. reusing
   favicon-144.png for Windows pinned site.
