@@ -20,8 +20,8 @@ Insert into `<head>`:
 
     .. code-block:: html
 
-        <link rel="icon" href="path/to/favicon.png">
-        <!--[if IE]><link rel="shortcut icon" href="path/to/favicon.ico"><![endif]-->
+        <link rel="icon" href="/path/to/favicon.png">
+        <!--[if IE]><link rel="shortcut icon" href="/path/to/favicon.ico"><![endif]-->
         <!-- or, set /favicon.ico for IE10 win -->
 
 Optional
@@ -47,40 +47,40 @@ If you're obsessive, you want all this too:
 
     .. code-block:: html
 
-        <link rel="icon" href="path/to/favicon-16.png" sizes="16x16">
-        <link rel="icon" href="path/to/favicon-32.png" sizes="32x32">
-        <link rel="icon" href="path/to/favicon-48.png" sizes="48x48">
-        <link rel="icon" href="path/to/favicon-64.png" sizes="64x64">
-        <link rel="icon" href="path/to/favicon-128.png" sizes="128x128">
+        <link rel="icon" href="/path/to/favicon-16.png" sizes="16x16">
+        <link rel="icon" href="/path/to/favicon-32.png" sizes="32x32">
+        <link rel="icon" href="/path/to/favicon-48.png" sizes="48x48">
+        <link rel="icon" href="/path/to/favicon-64.png" sizes="64x64">
+        <link rel="icon" href="/path/to/favicon-128.png" sizes="128x128">
 
 3. Largest to smallest apple-touch-icons:
 
     .. code-block:: html
 
         <!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
-        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="path/to/favicon-152.png">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/path/to/favicon-152.png">
 
         <!-- For iPad with high-resolution Retina display running iOS ≤ 6: -->
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="path/to/favicon-144.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/path/to/favicon-144.png">
 
         <!-- For iPhone with high-resolution Retina display running iOS ≥ 7: -->
-        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="path/to/favicon-120.png">
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/path/to/favicon-120.png">
 
         <!-- For iPhone with high-resolution Retina display running iOS ≤ 6: -->
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="path/to/favicon-114.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/path/to/favicon-114.png">
 
         <!-- For first- and second-generation iPad: -->
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="path/to/favicon-72.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/path/to/favicon-72.png">
 
         <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
-        <link rel="apple-touch-icon-precomposed" href="path/to/favicon-57.png">
+        <link rel="apple-touch-icon-precomposed" href="/path/to/favicon-57.png">
 
 4. IE 10 Metro tile icon so that the page can be pinned to Windows users' Start screen:
 
     .. code-block:: html
 
         <meta name="msapplication-TileColor" content="#D83434">
-        <meta name="msapplication-TileImage" content="path/to/favicon-144.png">
+        <meta name="msapplication-TileImage" content="/path/to/favicon-144.png">
 
 The Images
 ----------
@@ -160,6 +160,12 @@ I haven't tried them all, so use at your own risk.
 * Creating .ico files: http://www.imagemagick.org/Usage/thumbnails/#favicon
 * Dynamically setting favicons: https://github.com/HenrikJoreteg/favicon-setter
 * Fancy favicon tricks: https://github.com/component/piecon
+
+Tips
+----
+
+* Some Firefox versions require absolute paths
+* If you don't see it, clear cache (Ctrl+F5 or Ctrl+Shift+R)
 
 Contribute!
 -----------
