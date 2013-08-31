@@ -171,13 +171,13 @@ FAQ
 Is it true that favicons should be in the site root?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Only if you don't explicitly specify the browser/device-specific `<link>`
-tags with a favicon path.
+No, that's only if you don't explicitly specify the browser/device-specific
+`<link>` tags with a favicon path. See https://en.wikipedia.org/wiki/Favicon.ico.
 
 Is it true that the png has to be named favicon.png?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-No.
+No, this has never been true as far as I can tell from my obsessive research.
 
 Is it true that the ico has to be named favicon.ico?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
