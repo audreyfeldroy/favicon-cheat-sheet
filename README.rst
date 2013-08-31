@@ -146,7 +146,6 @@ Size    Purpose
 64x64   Windows site icons (no specifics given by MSDN)
 ======= =======================================================================
 
-
 Helpful Tools
 -------------
 
@@ -159,11 +158,16 @@ I haven't tried them all, so use at your own risk.
 * Dynamically setting favicons: https://github.com/HenrikJoreteg/favicon-setter
 * Fancy favicon tricks: https://github.com/component/piecon
 
-Tips
-----
+Forcing a Favicon Refresh
+-------------------------
 
-* Some Firefox versions require absolute paths.
-* If you don't see it, clear cache (Ctrl+F5 or Ctrl+Shift+R).
+* Development: Clear the browser cache (Ctrl+F5 or Ctrl+Shift+R).
+* Development/production: Append a query string. (TODO: find out if any
+  browsers have problems with this.)
+
+    .. code-block:: html
+
+        <link rel="shortcut icon" href="http://www.yoursite.com/favicon.ico?v=2" />
 
 FAQ
 ---
@@ -195,6 +199,10 @@ Boilerplate) rely on this assumption, but:
   shine. Sounds great in theory, but in practice the results can be very
   frustrating, especially to designers.
 * Non-precomposed icons don't work with Android 2.1.
+
+**Why absolute paths?**
+Some Firefox versions require absolute paths. Since all browsers support them,
+it's the simplest choice.
 
 Contribute!
 -----------
