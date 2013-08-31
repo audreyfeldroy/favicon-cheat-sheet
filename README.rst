@@ -90,7 +90,7 @@ Create at least this:
 ======== =============== =======================================================================
 Size     Name            Purpose
 ======== =============== =======================================================================
-multiple favicon.ico     New tab page in IE, taskbar button in Win 7+, Safari Read Later sidebar
+multiple favicon.ico     Default required by IE. Firefox and Chrome friendly too.
 ======== =============== =======================================================================
 
 See below. Yes, it's 1 file with multiple sizes.
