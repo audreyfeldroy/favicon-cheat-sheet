@@ -136,6 +136,7 @@ Size    Purpose
 ======= =======================================================================
 16x16   IE9 address bar, Pinned site Jump List/Toolbar/Overlay
 32x32   New tab page in IE, taskbar button in Win 7+, Safari Read Later sidebar
+64x64   Windows site icons (no specifics given by MSDN), Safari Read Later sidebar in HiDPI/Retina
 ======= =======================================================================
 
 If you're obsessive and don't mind 1-3kb extra size, also include these sizes
@@ -145,7 +146,6 @@ in your .ico:
 Size    Purpose
 ======= =======================================================================
 48x48   Windows site icons (no specifics given by MSDN)
-64x64   Windows site icons (no specifics given by MSDN)
 ======= =======================================================================
 
 Helpful Tools
