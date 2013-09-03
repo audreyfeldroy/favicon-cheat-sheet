@@ -3,6 +3,7 @@ favicon-cheat-sheet
 
 A painfully obsessive cheat sheet to favicon sizes/types. Compiled from:
 
+* http://mathiasbynens.be/notes/rel-shortcut-icon
 * http://www.jonathantneal.com/blog/understand-the-favicon/
 * https://en.wikipedia.org/wiki/Favicon.ico
 * http://snook.ca/archives/design/making_a_good_favicon
@@ -17,20 +18,9 @@ The HTML
 Basics
 ~~~~~~
 
-Insert into `<head>`:
+For the main favicon itself, don’t bother using any HTML. `Just name the file favicon.ico and place it in the root of your domain. <http://mathiasbynens.be/notes/rel-shortcut-icon>`_.
 
-    .. code-block:: html
-
-        <link rel="icon" sizes="16x16 32x32" href="/path/to/favicon.ico">
-        <!--[if IE]><link rel="shortcut icon" href="/path/to/favicon.ico"><![endif]-->
-
-This is optimized for the best experience in every desktop browser:
-
- * Most browsers use the standard HTML5-style line 1.
- * IE 9 and below will use line 2, the inner part of which follows the spec in http://msdn.microsoft.com/en-us/library/ie/gg491740(v=vs.85).aspx
- * Note: IE 10 doesn't support conditional comments. There is no documentation
-   on whether IE 10 has HTML5-style icon declaration support. TODO: verify
-   whether IE 10 will use line 1.
+This works in every relevant desktop browser.
 
 Optional But Encouraged
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -41,8 +31,10 @@ You probably also want the following:
 
     .. code-block:: html
 
-        <link rel="apple-touch-icon-precomposed" href="path/to/favicon-152.png">
+        <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed">
 
+   It’s recommended to name the file apple-touch-icon-precomposed.png and place it in the root of your domain.
+   
 2. IE 10 Metro tile icon (Metro equivalent of apple-touch-icon):
 
     .. code-block:: html
@@ -55,7 +47,7 @@ You probably also want the following:
 Very Optional, for the Obsessive
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If you're obsessive, you want all this too:
+If you're `obsessive <http://mathiasbynens.be/notes/touch-icons>`_, you want all this too:
 
 1. Largest to smallest apple-touch-icons:
 
