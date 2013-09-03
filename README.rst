@@ -176,7 +176,12 @@ Forcing a Favicon Refresh
     .. code-block:: html
 
         <link rel="shortcut icon" href="http://www.yoursite.com/favicon.ico?v=2" />
+        
+* Some proxies and load balancers can fail to read query strings in edge cases. For large versioned deployments, put your version number in the filename. 
 
+    .. code-block:: html
+
+        <link rel="shortcut icon" href="http://www.yoursite.com/favicon-v2.ico" />
 FAQ
 ---
 
