@@ -20,14 +20,9 @@ Basics
 
 For the main favicon itself, it's best for cross-browser compatibility not to
 use any HTML. Just name the file `favicon.ico` and place it in the root of your
-domain.[1]_.
+domain. [1]_ [2]_
 
-This works in:
-
-* Every desktop browser/version all the way back to IE6, except for SeaMonkey.[1]_
-
-.. [1] http://mathiasbynens.be/notes/rel-shortcut-icon
-.. [2] http://www.w3.org/html/wg/drafts/html/CR/links.html#rel-icon
+This works in every desktop browser/version all the way back to IE6, except for SeaMonkey. [1]_
 
 Optional But Encouraged
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -75,8 +70,6 @@ If you're obsessive, you want all this too:
 
         <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
         <link rel="apple-touch-icon-precomposed" href="/path/to/favicon-57.png">
-
-.. [3] Adapted from http://mathiasbynens.be/notes/touch-icons
 
 2. Favicons targeted to any additional png sizes that you add that aren't covered above:
 
@@ -145,8 +138,6 @@ Size    Purpose
 ======= =======================================================================
 48x48   Windows site icons [4]_
 ======= =======================================================================
-
-.. [4] No specifics given by MSDN.
 
 Helpful Tools
 -------------
@@ -230,3 +221,11 @@ Contribute!
 
 Send pull requests if you have anything to add/change, providing citations
 and justification. I'd love to see this improve.
+
+References
+----------
+
+.. [1] http://mathiasbynens.be/notes/rel-shortcut-icon
+.. [2] http://www.w3.org/html/wg/drafts/html/CR/links.html#rel-icon
+.. [3] Adapted from http://mathiasbynens.be/notes/touch-icons
+.. [4] No specifics given by MSDN.
