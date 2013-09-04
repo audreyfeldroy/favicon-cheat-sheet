@@ -161,6 +161,7 @@ I haven't tried them all, so use at your own risk.
 * Creating .ico files: http://www.imagemagick.org/Usage/thumbnails/#favicon
 * Dynamically setting favicons: https://github.com/HenrikJoreteg/favicon-setter
 * Fancy favicon tricks: https://github.com/component/piecon
+* Web Icon - a simple shell script that generates favicon and touch icons: https://github.com/emarref/webicon
 
 Forcing a Favicon Refresh
 -------------------------
