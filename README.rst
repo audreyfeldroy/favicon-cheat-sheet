@@ -18,9 +18,16 @@ The HTML
 Basics
 ~~~~~~
 
-For the main favicon itself, don’t bother using any HTML. `Just name the file favicon.ico and place it in the root of your domain. <http://mathiasbynens.be/notes/rel-shortcut-icon>`_.
+For the main favicon itself, it's best for cross-browser compatibility not to
+use any HTML. Just name the file `favicon.ico` and place it in the root of your
+domain.[1]_.
 
-This works in every relevant desktop browser.
+This works in:
+
+* Every desktop browser/version all the way back to IE6, except for SeaMonkey.[1]_
+
+.. [1] http://mathiasbynens.be/notes/rel-shortcut-icon
+.. [2] http://www.w3.org/html/wg/drafts/html/CR/links.html#rel-icon
 
 Optional But Encouraged
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -31,9 +38,7 @@ You probably also want the following:
 
     .. code-block:: html
 
-        <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed">
-
-   It’s recommended to name the file apple-touch-icon-precomposed.png and place it in the root of your domain.
+        <link rel="apple-touch-icon-precomposed" href="path/to/favicon-152.png">
    
 2. IE 10 Metro tile icon (Metro equivalent of apple-touch-icon):
 
@@ -47,9 +52,9 @@ You probably also want the following:
 Very Optional, for the Obsessive
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If you're `obsessive <http://mathiasbynens.be/notes/touch-icons>`_, you want all this too:
+If you're obsessive, you want all this too:
 
-1. Largest to smallest apple-touch-icons:
+1. Largest to smallest apple-touch-icons [3]_:
 
     .. code-block:: html
 
@@ -71,6 +76,7 @@ If you're `obsessive <http://mathiasbynens.be/notes/touch-icons>`_, you want all
         <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
         <link rel="apple-touch-icon-precomposed" href="/path/to/favicon-57.png">
 
+.. [3] Adapted from http://mathiasbynens.be/notes/touch-icons
 
 2. Favicons targeted to any additional png sizes that you add that aren't covered above:
 
@@ -128,7 +134,7 @@ Size    Purpose
 ======= =======================================================================
 16x16   IE9 address bar, Pinned site Jump List/Toolbar/Overlay
 32x32   New tab page in IE, taskbar button in Win 7+, Safari Read Later sidebar
-64x64   Windows site icons [*]_, Safari Read Later sidebar in HiDPI/Retina
+64x64   Windows site icons [4]_, Safari Read Later sidebar in HiDPI/Retina
 ======= =======================================================================
 
 If you're obsessive and don't mind 1-3kb extra size, also include these sizes
@@ -137,10 +143,10 @@ in your .ico:
 ======= =======================================================================
 Size    Purpose
 ======= =======================================================================
-48x48   Windows site icons [*]_
+48x48   Windows site icons [4]_
 ======= =======================================================================
 
-.. [*] No specifics given by MSDN.
+.. [4] No specifics given by MSDN.
 
 Helpful Tools
 -------------
