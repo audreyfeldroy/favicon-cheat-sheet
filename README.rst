@@ -157,23 +157,36 @@ I haven't tried them all, so use at your own risk.
 Forcing a Favicon Refresh
 -------------------------
 
+Not normally needed. This is only for those frustrating times when you can't
+get your favicon to refresh.
+
 * For yourself: Clear the browser cache (Ctrl+F5 or Ctrl+Shift+R).
 
   - Also close and reopen browser if IE.
   - If still stuck, try opening new tab. Or see http://stackoverflow.com/questions/2208933/how-do-i-force-a-favicon-refresh
-
-* For yourself and all site visitors: Append a query string. (TODO: find out if any
-  browsers have problems with this.)
+  - Temporarily add explicit HTML markup and append a query string. Remove
+    this when you're done:
 
     .. code-block:: html
 
         <link rel="shortcut icon" href="http://www.yoursite.com/favicon.ico?v=2" />
-        
-* Some proxies and load balancers can fail to read query strings in edge cases. For large versioned deployments, put your version number in the filename. 
+        <link rel="icon" sizes="16x16 32x32" href="/favicon.ico?v=2">
+
+For large versioned deployments, if all site visitors need their favicon
+force-refreshed in an extreme situation:
+
+* Add explicit HTML markup (customize the sizes part) and put your version
+  number in the filename.
 
     .. code-block:: html
 
-        <link rel="shortcut icon" href="http://www.yoursite.com/favicon-v2.ico" />
+        <link rel="shortcut icon" href="/favicon-v2.ico" />
+        <link rel="icon" sizes="16x16 32x32" href="/favicon-v2.ico">
+
+  TODO: find edge cases where this markup doesn't work (issue `#3`_).
+
+.. _`#3`: https://github.com/audreyr/favicon-cheat-sheet/issues/3
+
 FAQ
 ---
 
@@ -217,6 +230,9 @@ Boilerplate) rely on this assumption, but:
 **Why absolute paths?**
 Some Firefox versions require absolute paths. Since all browsers support them,
 it's the simplest choice.
+
+**Why not append a query string to force-refresh for all visitors?**
+Some proxies and load balancers can fail to read query strings in edge cases.
 
 Contribute!
 -----------
