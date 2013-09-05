@@ -122,7 +122,8 @@ Size    Name            Purpose
 ICO File
 --------
 
-An .ico file contains an icon at multiple sizes. In favicon.ico, create at least these:
+An .ico file is a container for multiple .bmp or .png icons of different sizes.
+In favicon.ico, create at least these:
 
 ======= =======================================================================
 Size    Purpose
@@ -142,18 +143,30 @@ Size    Purpose
 64x64   Windows site icons [4]_, Safari Read Later sidebar in HiDPI/Retina
 ======= =======================================================================
 
+Create your .ico out of optimized .png files.
+
+TODO: get confirmation that IE9+ supports .ico files that contain .png files (issue `#9`_)
+
+.. _`#9`: https://github.com/audreyr/favicon-cheat-sheet/issues/9
+
 Helpful Tools
 -------------
 
-I haven't tried them all, so use at your own risk.
+I recommend:
 
+1. OptiPNG, to optimize .png files before putting them into an .ico: http://optipng.sourceforge.net/
+2. ImageMagick, to create an .ico from .png files: http://blog.morzproject.com/convert-multiple-png-images-into-a-single-icon-file/ & http://www.imagemagick.org/Usage/thumbnails/#favicon
+
+Others that I haven't tried:
+
+* Ubuntu/Debian package `icoutil` has an icotool program which creates .ico from .png files.
 * MSDN recommends this web-based .ico creator: http://www.xiconeditor.com
 * Resize favicons: http://faviconer.com
 * More resizing: https://github.com/abrkn/icon
-* Creating .ico files: http://www.imagemagick.org/Usage/thumbnails/#favicon
 * Dynamically setting favicons: https://github.com/HenrikJoreteg/favicon-setter
 * Fancy favicon tricks: https://github.com/component/piecon
 * Web Icon - a simple shell script that generates favicon and touch icons: https://github.com/emarref/webicon
+* Icon Slate app (OS X): https://itunes.apple.com/us/app/icon-slate/id439697913
 
 Forcing a Favicon Refresh
 -------------------------
@@ -247,3 +260,4 @@ References
 .. [2] http://www.w3.org/html/wg/drafts/html/CR/links.html#rel-icon
 .. [3] Adapted from http://mathiasbynens.be/notes/touch-icons
 .. [4] No specifics given by MSDN.
+.. [5] http://blog.morzproject.com/convert-multiple-png-images-into-a-single-icon-file/
