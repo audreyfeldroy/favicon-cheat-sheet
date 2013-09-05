@@ -167,6 +167,7 @@ Others that I haven't tried:
 * Fancy favicon tricks: https://github.com/component/piecon
 * Web Icon - a simple shell script that generates favicon and touch icons: https://github.com/emarref/webicon
 * Icon Slate app (OS X): https://itunes.apple.com/us/app/icon-slate/id439697913
+* png2ico wrapper for ImageMagick: https://github.com/bebraw/png2ico
 
 Forcing a Favicon Refresh
 -------------------------
