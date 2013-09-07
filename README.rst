@@ -140,7 +140,7 @@ in your .ico:
 Size    Purpose
 ======= =======================================================================
 24x24   IE9 Pinned site browser UI
-64x64   Windows site icons [4]_, Safari Read Later sidebar in HiDPI/Retina
+64x64   Windows site icons [4]_, Safari Reading List sidebar in HiDPI/Retina
 ======= =======================================================================
 
 Create your .ico out of optimized .png files.
