@@ -73,7 +73,7 @@ If you're obsessive, you want all this too:
         <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
         <link rel="apple-touch-icon-precomposed" href="/path/to/favicon-57.png">
 
-2. Largest to smallest Windows 8 and 8.1 tile icons [6]_:
+2. Largest to smallest Windows 8.1 tile icons [6]_:
 
     .. code-block:: html
 
@@ -85,9 +85,6 @@ If you're obsessive, you want all this too:
 
         <!-- For IE11 on Windows 8.1; "Medium" tile size -->
         <meta name="msapplication-square150x150logo" content="/path/to/favicon-150.png">
-
-        <!-- For IE10 on Windows 8; Metro tile icon -->
-        <meta name="msapplication-TileImage" content="/path/to/favicon-144.png">
 
         <!-- For IE11 on Windows 8.1; "Small" tile size -->
         <meta name="msapplication-square70x70logo" content="/path/to/favicon-70.png">
