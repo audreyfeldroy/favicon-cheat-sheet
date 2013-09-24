@@ -67,7 +67,10 @@ If you're obsessive, you want all this too:
         <!-- For iPhone with high-resolution Retina display running iOS ≤ 6: -->
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/path/to/favicon-114.png">
 
-        <!-- For first- and second-generation iPad: -->
+        <!-- For non-retina iPad running iOS ≥ 7: -->
+        <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/path/to/favicon-76.png">
+
+        <!-- For non-retina iPad running iOS ≤ 6: -->
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/path/to/favicon-72.png">
 
         <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
@@ -110,7 +113,7 @@ Size    Name            Purpose
 ======= =============== =======================================================================
 32x32   favicon-32.png  Certain old but not too old Chrome versions mishandle ico
 57x57   favicon-57.png  Standard iOS home screen (iPod Touch, iPhone first generation to 3G)
-72x72   favicon-72.png  iPad home screen icon
+76x76   favicon-72.png  iPad home screen icon (Change for iOS 7: up from 72x72)
 96x96   favicon-96.png  GoogleTV icon
 120x120 favicon-120.png iPhone retina touch icon (Change for iOS 7: up from 114x114)
 128x128 favicon-128.png Chrome Web Store icon
