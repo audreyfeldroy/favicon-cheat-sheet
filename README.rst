@@ -92,8 +92,6 @@ If you're obsessive, you want all this too:
         <!-- For IE11 on Windows 8.1; "Small" tile size -->
         <meta name="msapplication-square70x70logo" content="/path/to/favicon-70.png">
 
-    Note that the sizes specified here are only their dimensions at 100% scaling. Windows 8 and 8.1 will also scale to 140% or 180% depending on the size of the display
-
 3. Favicons targeted to any additional png sizes that you add that aren't covered above:
 
     .. code-block:: html
