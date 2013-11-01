@@ -160,7 +160,7 @@ I recommend:
 
 Others that I haven't tried:
 
-* Ubuntu/Debian package `icoutil` has an icotool program which creates .ico from .png files.
+* Ubuntu/Debian package `icoutil` has an icotool program which creates .ico from .png files. You can find how to use it on this page: http://utdream.org/post.cfm/using-icoutils-on-linux-to-create-a-windows-icon.
 * MSDN recommends this web-based .ico creator: http://www.xiconeditor.com
 * Resize favicons: http://faviconer.com
 * More resizing: https://github.com/abrkn/icon
