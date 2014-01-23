@@ -160,6 +160,7 @@ I recommend:
 
 Others that I haven't tried:
 
+* Ubuntu/Debian package `ImageMagik` with command convert (convert favicon-16.png favicon-32.png favicon.ico)
 * Ubuntu/Debian package `icoutil` has an icotool program which creates .ico from .png files.
 * MSDN recommends this web-based .ico creator: http://www.xiconeditor.com
 * Resize favicons: http://faviconer.com
