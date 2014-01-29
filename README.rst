@@ -158,6 +158,10 @@ I recommend:
 1. OptiPNG, to optimize .png files before putting them into an .ico: http://optipng.sourceforge.net/
 2. ImageMagick, to create an .ico from .png files: http://blog.morzproject.com/convert-multiple-png-images-into-a-single-icon-file/ & http://www.imagemagick.org/Usage/thumbnails/#favicon
 
+    .. code-block:: bash
+
+        $ convert favicon-16.png favicon-32.png favicon.ico
+
 Others that I haven't tried:
 
 * Ubuntu/Debian package `icoutil` has an icotool program which creates .ico from .png files.
