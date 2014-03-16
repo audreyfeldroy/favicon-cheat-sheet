@@ -45,6 +45,33 @@ You probably also want the following:
         <meta name="msapplication-TileImage" content="/path/to/favicon-144.png">
 
    Replace #FFFFFF with your desired tile color.
+3. IE 11 Tile for Windows 8.1 Start Screen
+
+    .. code-block:: html
+
+        <meta name="application-name" content="Name">
+        <meta name="msapplication-tooltip" content="Tooltip">
+        <meta name="msapplication-config" content="/path/to/ieconfig.xml">
+
+        
+    ieconfig.xml
+
+    .. code-block:: xml
+
+        <?xml version="1.0" encoding="utf-8"?>
+            <browserconfig>
+              <msapplication>
+                <tile>
+                  <square70x70logo src="/path/to/smalltile.png"/>
+                  <square150x150logo src="/path/to/mediumtile.png"/>
+                  <wide310x150logo src="/path/to/widetile.png"/>
+                  <square310x310logo src="/path/to/largetile.png"/>
+                  <TileColor>#FFFFFF</TileColor>
+                </tile>
+              </msapplication>
+            </browserconfig>
+
+        
 
 Very Optional, for the Obsessive
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -117,11 +144,15 @@ Size    Name            Purpose
 96x96   favicon-96.png  GoogleTV icon
 120x120 favicon-120.png iPhone retina touch icon (Change for iOS 7: up from 114x114)
 128x128 favicon-128.png Chrome Web Store icon
+128x128	smalltile.png	Small Windows 8 Star Screen Icon
 144x144 favicon-144.png IE10 Metro tile for pinned site
 152x152 favicon-152.png iPad retina touch icon (Change for iOS 7: up from 144x144)
 195x195 favicon-195.png Opera Speed Dial icon (Not working in Opera 15 and later)
 196x196 favicon-196.png Chrome for Android home screen icon
 228x228 favicon-228.png Opera Coast icon
+270x270	mediumtile.png	Medium Windows 8 Star Screen Icon
+558x270	widetile.png	Wide Windows 8 Star Screen Icon
+558x558	largetile.png	Large Windows 8 Star Screen Icon
 ======= =============== =======================================================================
 
 ICO File
