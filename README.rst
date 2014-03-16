@@ -78,7 +78,10 @@ If you're obsessive, you want all this too:
     .. code-block:: html
 
         <link rel="icon" href="/path/to/favicon-32.png" sizes="32x32">
+3. Favicon Chrome for Android
 
+        <link rel="shortcut icon" sizes="196x196" href="/path/to/favicon-196.png">
+        
 The Images
 ----------
 
@@ -117,6 +120,7 @@ Size    Name            Purpose
 144x144 favicon-144.png IE10 Metro tile for pinned site
 152x152 favicon-152.png iPad retina touch icon (Change for iOS 7: up from 144x144)
 195x195 favicon-195.png Opera Speed Dial icon
+196x196 favicon-196.png Chrome for Android home screen icon
 228x228 favicon-228.png Opera Coast icon
 ======= =============== =======================================================================
 
