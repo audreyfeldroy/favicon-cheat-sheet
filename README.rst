@@ -119,7 +119,7 @@ Size    Name            Purpose
 128x128 favicon-128.png Chrome Web Store icon
 144x144 favicon-144.png IE10 Metro tile for pinned site
 152x152 favicon-152.png iPad retina touch icon (Change for iOS 7: up from 144x144)
-195x195 favicon-195.png Opera Speed Dial icon
+195x195 favicon-195.png Opera Speed Dial icon (Not working in Opera 15 and later)
 196x196 favicon-196.png Chrome for Android home screen icon
 228x228 favicon-228.png Opera Coast icon
 ======= =============== =======================================================================
