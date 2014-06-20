@@ -73,7 +73,23 @@ If you're obsessive, you want all this too:
         <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
         <link rel="apple-touch-icon-precomposed" href="/path/to/favicon-57.png">
 
-2. Favicons targeted to any additional png sizes that you add that aren't covered above:
+2. Largest to smallest Windows 8.1 tile icons [6]_:
+
+    .. code-block:: html
+
+        <!-- For IE11 on Windows 8.1; "Large" tile size -->
+        <meta name="msapplication-square310x310logo" content="/path/to/favicon-310.png">
+
+        <!-- For IE11 on Windows 8.1; "Wide" tile size -->
+        <meta name="msapplication-wide310x150logo" content="/path/to/favicon-310-150.png">
+
+        <!-- For IE11 on Windows 8.1; "Medium" tile size -->
+        <meta name="msapplication-square150x150logo" content="/path/to/favicon-150.png">
+
+        <!-- For IE11 on Windows 8.1; "Small" tile size -->
+        <meta name="msapplication-square70x70logo" content="/path/to/favicon-70.png">
+
+3. Favicons targeted to any additional png sizes that you add that aren't covered above:
 
     .. code-block:: html
 
@@ -105,20 +121,24 @@ Often you have to tweak subtle design details for smaller sizes.
 
 If you're obsessive, create these too:
 
-======= =============== =======================================================================
-Size    Name            Purpose
-======= =============== =======================================================================
-32x32   favicon-32.png  Certain old but not too old Chrome versions mishandle ico
-57x57   favicon-57.png  Standard iOS home screen (iPod Touch, iPhone first generation to 3G)
-72x72   favicon-72.png  iPad home screen icon
-96x96   favicon-96.png  GoogleTV icon
-120x120 favicon-120.png iPhone retina touch icon (Change for iOS 7: up from 114x114)
-128x128 favicon-128.png Chrome Web Store icon
-144x144 favicon-144.png IE10 Metro tile for pinned site
-152x152 favicon-152.png iPad retina touch icon (Change for iOS 7: up from 144x144)
-195x195 favicon-195.png Opera Speed Dial icon
-228x228 favicon-228.png Opera Coast icon
-======= =============== =======================================================================
+======= =================== =======================================================================
+Size    Name                Purpose
+======= =================== =======================================================================
+32x32   favicon-32.png      Certain old but not too old Chrome versions mishandle ico
+57x57   favicon-57.png      Standard iOS home screen (iPod Touch, iPhone first generation to 3G)
+70x70   favicon-70.png      IE11 "Small" Metro tile for pinned site
+72x72   favicon-72.png      iPad home screen icon
+96x96   favicon-96.png      GoogleTV icon
+120x120 favicon-120.png     iPhone retina touch icon (Change for iOS 7: up from 114x114)
+128x128 favicon-128.png     Chrome Web Store icon
+144x144 favicon-144.png     IE10 Metro tile for pinned site
+150x150 favicon-150.png     IE11 "Medium" Metro tile for pinned site
+152x152 favicon-152.png     iPad retina touch icon (Change for iOS 7: up from 144x144)
+195x195 favicon-195.png     Opera Speed Dial icon
+228x228 favicon-228.png     Opera Coast icon
+310x150 favicon-310-150.png IE11 "Wide" Metro tile for pinned site
+310x310 favicon-310.png     IE11 "Large" Metro tile for pinned site
+======= =================== =======================================================================
 
 ICO File
 --------
@@ -273,3 +293,4 @@ References
 .. [3] Adapted from http://mathiasbynens.be/notes/touch-icons
 .. [4] No specifics given by MSDN.
 .. [5] http://blog.morzproject.com/convert-multiple-png-images-into-a-single-icon-file/
+.. [6] http://msdn.microsoft.com/en-us/library/ie/dn255024(v=vs.85).aspx
