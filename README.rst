@@ -224,7 +224,7 @@ No, that's only if you don't explicitly specify the browser/device-specific
 
 If you don't have favicon.ico in the root consider adding one, or returning a HTTP 204 instead.
 Many tools and services e.g. bookmarking sites, feed readers, web crawlers etc., request a 
-favicon.ico from the site root, and so recieve a HTTP 404 if it's not present. In the worst 
+favicon.ico from the site root, and so receive a HTTP 404 if it's not present. In the worst 
 case some frameworks will return a custom error page which is likely to be many times larger
 than the missing favicon.
 
