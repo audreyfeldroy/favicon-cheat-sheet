@@ -11,6 +11,7 @@ A painfully obsessive cheat sheet to favicon sizes/types. Compiled from:
 * http://www.netmagazine.com/features/create-perfect-favicon
 * http://www.ravelrumba.com/blog/android-apple-touch-icon/
 * http://msdn.microsoft.com/en-us/library/ie/gg491740(v=vs.85).aspx
+* https://developer.chrome.com/multidevice/android/installtohomescreen
 
 .. _`@mathiasbynens`: https://github.com/mathiasbynens
 
@@ -117,6 +118,7 @@ Size    Name            Purpose
 144x144 favicon-144.png IE10 Metro tile for pinned site
 152x152 favicon-152.png iPad retina touch icon (Change for iOS 7: up from 144x144)
 195x195 favicon-195.png Opera Speed Dial icon
+196x196 favicon-196.png Chrome for Android home screen and task-switcher
 228x228 favicon-228.png Opera Coast icon
 ======= =============== =======================================================================
 
