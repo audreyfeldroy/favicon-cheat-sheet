@@ -36,7 +36,7 @@ You probably also want the following:
     .. code-block:: html
 
         <link rel="apple-touch-icon-precomposed" href="path/to/favicon-152.png">
-   
+
 2. IE 10 Metro tile icon (Metro equivalent of apple-touch-icon):
 
     .. code-block:: html
@@ -54,6 +54,9 @@ If you're obsessive, you want all this too:
 1. Largest to smallest apple-touch-icons [3]_:
 
     .. code-block:: html
+
+        <!-- For iPhone 6 Plus with high-resolution Retina display running iOS ≥ 8: -->
+        <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/path/to/favicon-180.png">
 
         <!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
         <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/path/to/favicon-152.png">
@@ -116,6 +119,7 @@ Size    Name            Purpose
 128x128 favicon-128.png Chrome Web Store icon
 144x144 favicon-144.png IE10 Metro tile for pinned site
 152x152 favicon-152.png iPad retina touch icon (Change for iOS 7: up from 144x144)
+180x180 favicon-180.png iPhone 6 Plus retina touch icon [6]_
 195x195 favicon-195.png Opera Speed Dial icon
 228x228 favicon-228.png Opera Coast icon
 ======= =============== =======================================================================
@@ -223,8 +227,8 @@ No, that's only if you don't explicitly specify the browser/device-specific
 `<link>` tags with a favicon path. See https://en.wikipedia.org/wiki/Favicon.ico.
 
 If you don't have favicon.ico in the root consider adding one, or returning a HTTP 204 instead.
-Many tools and services e.g. bookmarking sites, feed readers, web crawlers etc., request a 
-favicon.ico from the site root, and so recieve a HTTP 404 if it's not present. In the worst 
+Many tools and services e.g. bookmarking sites, feed readers, web crawlers etc., request a
+favicon.ico from the site root, and so recieve a HTTP 404 if it's not present. In the worst
 case some frameworks will return a custom error page which is likely to be many times larger
 than the missing favicon.
 
@@ -273,3 +277,4 @@ References
 .. [3] Adapted from http://mathiasbynens.be/notes/touch-icons
 .. [4] No specifics given by MSDN.
 .. [5] http://blog.morzproject.com/convert-multiple-png-images-into-a-single-icon-file/
+.. [6] https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/IconMatrix.html
