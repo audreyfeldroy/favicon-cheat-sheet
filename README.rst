@@ -150,6 +150,15 @@ TODO: get confirmation that IE9+ supports .ico files that contain .png files (is
 
 .. _`#9`: https://github.com/audreyr/favicon-cheat-sheet/issues/9
 
+
+Software
+--------
+
+
+- `Django <https://github.com/django/django>`_
+ +  `django-favicon-plus <https://github.com/arteria/django-favicon-plus>`_
+
+
 Helpful Tools
 -------------
 
