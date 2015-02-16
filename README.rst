@@ -18,9 +18,9 @@ Table of contents
 -----------------
 
 - `The HTML`_
- - `Basics`_
- - `Optional But Encouraged`_
- - `Very Optional, for the Obsessive`_
+   - `Basics`_
+   - `Optional But Encouraged`_
+   - `Very Optional, for the Obsessive`_
 - `The Images`_
 - `ICO File`_
 - `Software`_
@@ -171,7 +171,7 @@ Software
 
 
 - `Django <https://github.com/django/django>`_
- +  `django-favicon-plus <https://github.com/arteria/django-favicon-plus>`_
+   +  `django-favicon-plus <https://github.com/arteria/django-favicon-plus>`_
 
 
 Helpful Tools
