@@ -14,6 +14,21 @@ A painfully obsessive cheat sheet to favicon sizes/types. Compiled from:
 
 .. _`@mathiasbynens`: https://github.com/mathiasbynens
 
+Table of contents
+-----------------
+
+- `The HTML`_
+ - `Basics`_
+ - `Optional But Encouraged`_
+ - `Very Optional, for the Obsessive`_
+- `The Images`_
+- `ICO File`_
+- `Software`_
+- `Helpful Tools`_
+- `Forcing a Favicon Refresh`_
+- `Contribute!`_
+- `References`_
+
 The HTML
 --------
 
