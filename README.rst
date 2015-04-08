@@ -150,6 +150,38 @@ TODO: get confirmation that IE9+ supports .ico files that contain .png files (is
 
 .. _`#9`: https://github.com/audreyr/favicon-cheat-sheet/issues/9
 
+Tiles use in browser configuration files
+----------------------------------------
+
+The following file called browserconfig.xml is used by IE11 in so called Live Tiles. These tiles can be pinned onto the Windows 8.1. Start screen. [6]_
+
+    .. code-block:: xml
+
+      <?xml version="1.0" encoding="utf-8"?>
+      <browserconfig>
+        <msapplication>
+          <tile>
+            <square70x70logo src="path/to/tile-128x128.png"/>
+            <square150x150logo src="path/to/tile-270x270.png"/>
+            <wide310x150logo src="path/to/tile-558x270.png"/>
+            <square310x310logo src="path/to/tile-558x558.png"/>
+            <TileColor>#009900</TileColor>
+          </tile>
+      </browserconfig>
+
+The following image sizes are recommended: [7]_
+
+======= ================ =======================================================================
+Size    Name             Purpose
+======= ================ =======================================================================
+128x128 tile-128x128.png Use for 70x70px tile
+270x270 tile-270x270.png Use for 150x150px tile
+558x270 tile-558x270.png Use for 310x150px tile
+558x558 tile-558x558.png Use for 310x310px tile
+======= ================ =======================================================================
+
+
+
 Helpful Tools
 -------------
 
@@ -273,3 +305,5 @@ References
 .. [3] Adapted from http://mathiasbynens.be/notes/touch-icons
 .. [4] No specifics given by MSDN.
 .. [5] http://blog.morzproject.com/convert-multiple-png-images-into-a-single-icon-file/
+.. [6] https://msdn.microsoft.com/en-us/library/ie/bg183312(v=vs.85).aspx
+.. [7] https://msdn.microsoft.com/en-us/library/ie/dn455106(v=vs.85).aspx
