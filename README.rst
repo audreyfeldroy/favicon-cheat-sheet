@@ -36,7 +36,7 @@ You probably also want the following:
     .. code-block:: html
 
         <link rel="apple-touch-icon-precomposed" href="path/to/favicon-152.png">
-   
+
 2. IE 10 Metro tile icon (Metro equivalent of apple-touch-icon):
 
     .. code-block:: html
@@ -174,13 +174,28 @@ The following image sizes are recommended: [7]_
 ======= ================ =======================================================================
 Size    Name             Purpose
 ======= ================ =======================================================================
-128x128 tile-128x128.png Use for 70x70px tile
-270x270 tile-270x270.png Use for 150x150px tile
-558x270 tile-558x270.png Use for 310x150px tile
-558x558 tile-558x558.png Use for 310x310px tile
+128×128 tile-128x128.png Use for 70x70px tile
+270×270 tile-270x270.png Use for 150x150px tile
+558×270 tile-558x270.png Use for 310x150px tile
+558×558 tile-558x558.png Use for 310x310px tile
 ======= ================ =======================================================================
 
+Firefox icons
+-------------
 
+For Firefox OS apps there is also a guide on how to create icons similar to favicons. [8]_
+
+======= ================= =======================================================================
+Size    Name              Purpose
+======= ================= =======================================================================
+60×60   firefox-60x60.png Used for firefox apps. See special styling rules below.
+======= ================= =======================================================================
+
+Note that your icon has to be modified.
+
+* If it is circulrar, it has to have a diameter of 58px (having a 1px padding).
+* If it has rounded corners with an 8px radius corner, ist has to be 54x54 pixels (resulting in a 3px padding).
+* If it is square with no rounded corners, ist has to be 52x52 pxiels (resulting in a 4px padding)
 
 Helpful Tools
 -------------
@@ -255,8 +270,8 @@ No, that's only if you don't explicitly specify the browser/device-specific
 `<link>` tags with a favicon path. See https://en.wikipedia.org/wiki/Favicon.ico.
 
 If you don't have favicon.ico in the root consider adding one, or returning a HTTP 204 instead.
-Many tools and services e.g. bookmarking sites, feed readers, web crawlers etc., request a 
-favicon.ico from the site root, and so recieve a HTTP 404 if it's not present. In the worst 
+Many tools and services e.g. bookmarking sites, feed readers, web crawlers etc., request a
+favicon.ico from the site root, and so recieve a HTTP 404 if it's not present. In the worst
 case some frameworks will return a custom error page which is likely to be many times larger
 than the missing favicon.
 
@@ -307,3 +322,4 @@ References
 .. [5] http://blog.morzproject.com/convert-multiple-png-images-into-a-single-icon-file/
 .. [6] https://msdn.microsoft.com/en-us/library/ie/bg183312(v=vs.85).aspx
 .. [7] https://msdn.microsoft.com/en-us/library/ie/dn455106(v=vs.85).aspx
+.. [8] https://www.mozilla.org/en-US/styleguide/products/firefox-os/icons/
