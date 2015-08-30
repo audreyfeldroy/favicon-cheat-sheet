@@ -181,7 +181,7 @@ Forcing a Favicon Refresh
 Not normally needed. This is only for those frustrating times when you can't
 get your favicon to refresh, during development:
 
-* Clear the browser cache (Ctrl+F5 or Ctrl+Shift+R).
+* Clear the browser cache on Windows (Ctrl+F5 or Ctrl+Shift+R) and on Mac (Command + Shift + R).
 * Also close and reopen browser if IE.
 * If still stuck, try opening new tab. Or see http://stackoverflow.com/questions/2208933/how-do-i-force-a-favicon-refresh
 * Temporarily add explicit HTML markup and append a query string. Remove
