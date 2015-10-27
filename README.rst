@@ -165,7 +165,7 @@ I recommend:
 Others that I haven't tried:
 
 * Favic-o-matic: http://www.favicomatic.com - A favicon generator that cares of .ico, .png and HTML code to make your website shine on every platform, browser or device
-* Ubuntu/Debian package `icoutil` has an icotool program which creates .ico from .png files.
+* Ubuntu/Debian package `icoutil` (Fedora package `icoutils`_) provides the program `icotool` which creates .ico from .png files.
 * MSDN recommends this web-based .ico creator: http://www.xiconeditor.com
 * Resize favicons: http://faviconer.com
 * More resizing: https://github.com/abrkn/icon
@@ -174,6 +174,8 @@ Others that I haven't tried:
 * Web Icon - a simple shell script that generates favicon and touch icons: https://github.com/emarref/webicon
 * Icon Slate app (OS X): https://itunes.apple.com/us/app/icon-slate/id439697913
 * png2ico wrapper for ImageMagick: https://github.com/bebraw/png2ico
+
+.. _`icoutils`: https://apps.fedoraproject.org/packages/icoutils
 
 Forcing a Favicon Refresh
 -------------------------
