@@ -174,8 +174,10 @@ Others that I haven't tried:
 * Web Icon - a simple shell script that generates favicon and touch icons: https://github.com/emarref/webicon
 * Icon Slate app (OS X): https://itunes.apple.com/us/app/icon-slate/id439697913
 * png2ico wrapper for ImageMagick: https://github.com/bebraw/png2ico
+* `GIMP`_: export as .ico, each layer is saved as an image
 
 .. _`icoutils`: https://apps.fedoraproject.org/packages/icoutils
+.. _`GIMP`: https://www.gimp.org/
 
 Forcing a Favicon Refresh
 -------------------------
