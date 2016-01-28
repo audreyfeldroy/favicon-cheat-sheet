@@ -272,7 +272,7 @@ References
 ----------
 
 .. [1] http://mathiasbynens.be/notes/rel-shortcut-icon
-.. [2] http://www.w3.org/html/wg/drafts/html/CR/links.html#rel-icon
+.. [2] http://www.w3.org/TR/html5/links.html#rel-icon
 .. [3] Adapted from http://mathiasbynens.be/notes/touch-icons
 .. [4] No specifics given by MSDN.
 .. [5] http://blog.morzproject.com/convert-multiple-png-images-into-a-single-icon-file/
