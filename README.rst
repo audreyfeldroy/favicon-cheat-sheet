@@ -120,7 +120,7 @@ If you're obsessive, you want all this too:
 
         <link rel="mask-icon" href="/path/to/mask-icon.svg" color="#900">
 
-    Replace #900 with your desired color. Can also be rgb() or a color keyword.
+   Replace #900 with your desired color. Can also be rgb() or a color keyword.
 
 The Images
 ----------
