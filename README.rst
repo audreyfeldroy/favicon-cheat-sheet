@@ -11,6 +11,7 @@ A painfully obsessive cheat sheet to favicon sizes/types. Compiled from:
 * http://www.netmagazine.com/features/create-perfect-favicon
 * http://www.ravelrumba.com/blog/android-apple-touch-icon/
 * http://msdn.microsoft.com/en-us/library/ie/gg491740(v=vs.85).aspx
+* https://developer.apple.com/library/prerelease/ios/documentation/AppleApplications/Reference/SafariWebContent/pinnedTabs/pinnedTabs.html
 
 .. _`@mathiasbynens`: https://github.com/mathiasbynens
 
@@ -36,7 +37,7 @@ You probably also want the following:
     .. code-block:: html
 
         <link rel="apple-touch-icon-precomposed" href="path/to/favicon-180.png">
-   
+
 2. IE 10 Metro tile icon (Metro equivalent of apple-touch-icon):
 
     .. code-block:: html
@@ -53,7 +54,7 @@ You probably also want the following:
         <meta name="msapplication-tooltip" content="Tooltip">
         <meta name="msapplication-config" content="/path/to/ieconfig.xml">
 
-        
+
     ieconfig.xml
 
     .. code-block:: xml
@@ -71,7 +72,7 @@ You probably also want the following:
               </msapplication>
             </browserconfig>
 
-        
+
 
 Very Optional, for the Obsessive
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -83,7 +84,7 @@ If you're obsessive, you want all this too:
     .. code-block:: html
 		<!-- For Iphone 6 plus running iOS 8: -->
 		<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/path/to/favicon-180.png">
-		
+
         <!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
         <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/path/to/favicon-152.png">
 
@@ -112,7 +113,15 @@ If you're obsessive, you want all this too:
     .. code-block:: html
 
         <link rel="shortcut icon" sizes="196x196" href="/path/to/favicon-196.png">
-        
+
+4. Safari 9.0+ pinned tab icons:
+
+    .. code-block:: html
+
+        <link rel="mask-icon" href="/path/to/mask-icon.svg" color="#900">
+
+    Replace #900 with your desired color. Can also be rgb() or a color keyword.
+
 The Images
 ----------
 
@@ -158,6 +167,7 @@ Size    Name            Purpose
 270x270	mediumtile.png	Medium Windows 8 Start Screen Icon
 558x270	widetile.png	Wide Windows 8 Start Screen Icon
 558x558	largetile.png	Large Windows 8 Start Screen Icon
+N/A     mask-icon.svg   Safari pinned tab icon; black on transparent SVG
 ======= =============== =======================================================================
 
 ICO File
@@ -196,7 +206,7 @@ SVG File
 Pinned tabs in Safari 9+ use an SVG vector mask for the favicon instead of any other PNG/ICO/etc. favicons that may be present. Vector artwork in the SVG file should be black only (no shades of black or other colors) with a transparent background. Also, a fill color needs to be defined in the <link> tag - a hex value or color shorthand will work. Here's the markup for adding the icon:
 
     .. code-block:: html
-    
+
     	<link rel='mask-icon' href='icon.svg' color='#ff0000'>
 
 Helpful Tools
@@ -277,8 +287,8 @@ No, that's only if you don't explicitly specify the browser/device-specific
 `<link>` tags with a favicon path. See https://en.wikipedia.org/wiki/Favicon.ico.
 
 If you don't have favicon.ico in the root consider adding one, or returning a HTTP 204 instead.
-Many tools and services e.g. bookmarking sites, feed readers, web crawlers etc., request a 
-favicon.ico from the site root, and so receive a HTTP 404 if it's not present. In the worst 
+Many tools and services e.g. bookmarking sites, feed readers, web crawlers etc., request a
+favicon.ico from the site root, and so receive a HTTP 404 if it's not present. In the worst
 case some frameworks will return a custom error page which is likely to be many times larger
 than the missing favicon.
 
@@ -317,9 +327,9 @@ Contribute!
 -----------
 
 Send pull requests if you have anything to add/change, providing citations
-and justification. I'd love to see this improve. 
+and justification. I'd love to see this improve.
 
-Note on March 6, 2020: I'm behind on merging PRs but am slowly catching up. 
+Note on March 6, 2020: I'm behind on merging PRs but am slowly catching up.
 Bear with me while I get this repo caught up. ❤️
 
 References
