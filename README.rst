@@ -1,4 +1,4 @@
-favicon-cheat-sheet
+favicon Cheat Sheet
 ===================
 
 A painfully obsessive cheat sheet to favicon sizes/types. Compiled from:
@@ -36,7 +36,7 @@ You probably also want the following:
     .. code-block:: html
 
         <link rel="apple-touch-icon-precomposed" href="path/to/favicon-152.png">
-   
+
 2. IE 10 Metro tile icon (Metro equivalent of apple-touch-icon):
 
     .. code-block:: html
@@ -77,7 +77,7 @@ If you're obsessive, you want all this too:
 
     .. code-block:: html
 
-        <link rel="icon" href="/path/to/favicon-32.png" sizes="32x32">
+        <link rel="icon" sizes="32x32" href="/path/to/favicon-32.png">
 
 The Images
 ----------
@@ -153,7 +153,8 @@ TODO: get confirmation that IE9+ supports .ico files that contain .png files (is
 Helpful Tools
 -------------
 
-I recommend:
+Recommended
+~~~~~~~~~~~
 
 1. OptiPNG, to optimize .png files before putting them into an .ico: http://optipng.sourceforge.net/
 2. ImageMagick, to create an .ico from .png files: http://blog.morzproject.com/convert-multiple-png-images-into-a-single-icon-file/ & http://www.imagemagick.org/Usage/thumbnails/#favicon
@@ -162,7 +163,18 @@ I recommend:
 
         $ convert favicon-16.png favicon-32.png favicon.ico
 
-Others that I haven't tried:
+3. Icon Slate for Mac, to create an .ico and optimized .png files: https://itunes.apple.com/us/app/icon-slate/id439697913
+
+    .. image:: https://raw.githubusercontent.com/audreyr/favicon-cheat-sheet/master/iconslate-new-project.png
+        :alt: Create a new favicon project in Icon Slate
+        :width: 678
+        :height: 653
+        :align: center
+
+    Create a New Project in Icon Slate, click the gear icon and choose **favicon** from the list of predefined configurations to setup an icon project with all of the sizes outlined in this cheat sheet. Drop your .png onto the project to populate all sizes automatically. Rename the icon from "New Icon" to "favicon" and run the **Build** process from the application's menu bar to create all the .png icon sizes listed above as well as a .ico file containing the 5 sizes listed above.
+
+Untested
+~~~~~~~~
 
 * Favic-o-matic: http://www.favicomatic.com - A favicon generator that cares of .ico, .png and HTML code to make your website shine on every platform, browser or device
 * Ubuntu/Debian package `icoutil` (Fedora package `icoutils`_) provides the program `icotool` which creates .ico from .png files.
@@ -172,7 +184,6 @@ Others that I haven't tried:
 * Dynamically setting favicons: https://github.com/HenrikJoreteg/favicon-setter
 * Fancy favicon tricks: https://github.com/component/piecon
 * Web Icon - a simple shell script that generates favicon and touch icons: https://github.com/emarref/webicon
-* Icon Slate app (OS X): https://itunes.apple.com/us/app/icon-slate/id439697913
 * png2ico wrapper for ImageMagick: https://github.com/bebraw/png2ico
 
 .. _`icoutils`: https://apps.fedoraproject.org/packages/icoutils
@@ -226,8 +237,8 @@ No, that's only if you don't explicitly specify the browser/device-specific
 `<link>` tags with a favicon path. See https://en.wikipedia.org/wiki/Favicon.ico.
 
 If you don't have favicon.ico in the root consider adding one, or returning a HTTP 204 instead.
-Many tools and services e.g. bookmarking sites, feed readers, web crawlers etc., request a 
-favicon.ico from the site root, and so receive a HTTP 404 if it's not present. In the worst 
+Many tools and services e.g. bookmarking sites, feed readers, web crawlers etc., request a
+favicon.ico from the site root, and so receive a HTTP 404 if it's not present. In the worst
 case some frameworks will return a custom error page which is likely to be many times larger
 than the missing favicon.
 
