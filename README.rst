@@ -153,9 +153,9 @@ Size    Name            Purpose
 195x195 favicon-195.png Opera Speed Dial icon (Not working in Opera 15 and later)
 196x196 favicon-196.png Chrome for Android home screen icon
 228x228 favicon-228.png Opera Coast icon
-270x270	mediumtile.png	Medium Windows 8 Star Screen Icon
-558x270	widetile.png	Wide Windows 8 Star Screen Icon
-558x558	largetile.png	Large Windows 8 Star Screen Icon
+270x270	mediumtile.png	Medium Windows 8 Start Screen Icon
+558x270	widetile.png	Wide Windows 8 Start Screen Icon
+558x558	largetile.png	Large Windows 8 Start Screen Icon
 ======= =============== =======================================================================
 
 ICO File
