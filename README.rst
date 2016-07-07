@@ -81,23 +81,27 @@ If you're obsessive, you want all this too:
 1. Largest to smallest apple-touch-icons [3]_:
 
     .. code-block:: html
-		<!-- For Iphone 6 plus running iOS 8: -->
-		<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/path/to/favicon-180.png">
+    
+	<!-- For Iphone 6 plus running iOS 8: -->
+	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/path/to/favicon-180.png">
+	
+	<!-- For the iPad Pro -->
+	<link rel="apple-touch-icon-precomposed" sizes="167x167" href="/path/to/favicon-167.png">
 		
         <!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
         <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/path/to/favicon-152.png">
 
-        <!-- For iPad with high-resolution Retina display running iOS ≤ 6: -->
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/path/to/favicon-144.png">
-
         <!-- For iPhone with high-resolution Retina display running iOS ≥ 7: -->
         <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/path/to/favicon-120.png">
-
-        <!-- For iPhone with high-resolution Retina display running iOS ≤ 6: -->
+        
+        <!-- For iPhone and iPad with high-resolution Retina display running iOS ≤ 6: -->
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/path/to/favicon-114.png">
 
-        <!-- For first- and second-generation iPad: -->
+        <!-- For the iPad mini and the first- and second-generation iPad on iOS ≥ 7: -->
         <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/path/to/favicon-76.png">
+        
+        <!-- For the iPad mini and the first- and second-generation iPad on iOS ≤ 6: -->
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/path/to/favicon-72.png">
 
         <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
         <link rel="apple-touch-icon-precomposed" href="/path/to/favicon-57.png">
@@ -107,9 +111,12 @@ If you're obsessive, you want all this too:
     .. code-block:: html
 
         <link rel="icon" href="/path/to/favicon-32.png" sizes="32x32">
+        
 3. Favicon Chrome for Android
 
-        <link rel="shortcut icon" sizes="196x196" href="/path/to/favicon-196.png">
+    .. code-block:: html
+    
+        <link rel="shortcut icon" sizes="192x192" href="/path/to/favicon-192.png">
         
 The Images
 ----------
@@ -142,16 +149,19 @@ Size    Name            Purpose
 ======= =============== =======================================================================
 32x32   favicon-32.png  Certain old but not too old Chrome versions mishandle ico
 57x57   favicon-57.png  Standard iOS home screen (iPod Touch, iPhone first generation to 3G)
-76x76   favicon-76.png  iPad home screen icon
+72x72   favicon-72.png  iPad mini and the first- and second-generation iPad on iOS ≤ 6
+76x76   favicon-76.png  iPad mini and the first- and second-generation iPad on iOS ≥ 7
 96x96   favicon-96.png  GoogleTV icon
-120x120 favicon-120.png iPhone retina touch icon (Change for iOS 7: up from 114x114)
+114x114 favicon-114.png iPhone and iPad retina touch icon (running iOS ≤ 6)
+120x120 favicon-120.png iPhone retina touch icon (running iOS ≥ 7)
 128x128 favicon-128.png Chrome Web Store icon
 128x128	smalltile.png	Small Windows 8 Star Screen Icon
 144x144 favicon-144.png IE10 Metro tile for pinned site
 152x152 favicon-152.png iPad retina touch icon (Change for iOS 7: up from 144x144)
+167x167 favicon-167.png iPad Pro
 180x180 favicon-180.png iPhone 6 plus
+192x192 favicon-192.png Chrome for Android home screen icon
 195x195 favicon-195.png Opera Speed Dial icon (Not working in Opera 15 and later)
-196x196 favicon-196.png Chrome for Android home screen icon
 228x228 favicon-228.png Opera Coast icon
 270x270	mediumtile.png	Medium Windows 8 Start Screen Icon
 558x270	widetile.png	Wide Windows 8 Start Screen Icon
@@ -212,6 +222,7 @@ I recommend:
 Others that I haven't tried:
 
 * Favic-o-matic: http://www.favicomatic.com - A favicon generator that cares of .ico, .png and HTML code to make your website shine on every platform, browser or device
+* Real Favicon Generator: https://realfavicongenerator.net - Another favicon generator that generates and lets you customize all the icons you could ever want.
 * Ubuntu/Debian package `icoutil` (Fedora package `icoutils`_) provides the program `icotool` which creates .ico from .png files.
 * MSDN recommends this web-based .ico creator: http://www.xiconeditor.com
 * Resize favicons: http://faviconer.com
