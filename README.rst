@@ -105,8 +105,11 @@ If you're obsessive, you want all this too:
     .. code-block:: html
 
         <link rel="icon" href="/path/to/favicon-32.png" sizes="32x32">
+        
 3. Favicon Chrome for Android
+
     .. code-block:: html
+    
         <link rel="shortcut icon" sizes="192x192" href="/path/to/favicon-192.png">
         
 The Images
