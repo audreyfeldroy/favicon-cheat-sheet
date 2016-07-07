@@ -217,6 +217,7 @@ I recommend:
 Others that I haven't tried:
 
 * Favic-o-matic: http://www.favicomatic.com - A favicon generator that cares of .ico, .png and HTML code to make your website shine on every platform, browser or device
+* Real Favicon Generator: https://realfavicongenerator.net - Another favicon generator that generates and lets you customize all the icons you could ever want.
 * Ubuntu/Debian package `icoutil` (Fedora package `icoutils`_) provides the program `icotool` which creates .ico from .png files.
 * MSDN recommends this web-based .ico creator: http://www.xiconeditor.com
 * Resize favicons: http://faviconer.com
