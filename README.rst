@@ -81,8 +81,9 @@ If you're obsessive, you want all this too:
 1. Largest to smallest apple-touch-icons [3]_:
 
     .. code-block:: html
-		<!-- For Iphone 6 plus running iOS 8: -->
-		<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/path/to/favicon-180.png">
+    
+	<!-- For Iphone 6 plus running iOS 8: -->
+	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/path/to/favicon-180.png">
 	
 	<!-- For the iPad Pro -->
 	<link rel="apple-touch-icon-precomposed" sizes="167x167" href="/path/to/favicon-167.png">
