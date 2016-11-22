@@ -137,52 +137,45 @@ Often you have to tweak subtle design details for smaller sizes.
 
 If you're obsessive, create these too:
 
-======= =============== =======================================================================
-Size    Name            Purpose
-======= =============== =======================================================================
-32x32   favicon-32.png  Certain old but not too old Chrome versions mishandle ico
-57x57   favicon-57.png  Standard iOS home screen (iPod Touch, iPhone first generation to 3G)
-76x76   favicon-76.png  iPad home screen icon
-96x96   favicon-96.png  GoogleTV icon
-120x120 favicon-120.png iPhone retina touch icon (Change for iOS 7: up from 114x114)
-128x128 favicon-128.png Chrome Web Store icon
-128x128	smalltile.png	Small Windows 8 Star Screen Icon
-144x144 favicon-144.png IE10 Metro tile for pinned site
-152x152 favicon-152.png iPad retina touch icon (Change for iOS 7: up from 144x144)
-180x180 favicon-180.png iPhone 6 plus
-195x195 favicon-195.png Opera Speed Dial icon (Not working in Opera 15 and later)
-196x196 favicon-196.png Chrome for Android home screen icon
-228x228 favicon-228.png Opera Coast icon
-270x270	mediumtile.png	Medium Windows 8 Start Screen Icon
-558x270	widetile.png	Wide Windows 8 Start Screen Icon
-558x558	largetile.png	Large Windows 8 Start Screen Icon
-======= =============== =======================================================================
+======= ======================== =======================================================================
+Size    Name		         Purpose
+======= ======================== =======================================================================
+32x32   favicon-32.png           Certain old but not too old Chrome versions mishandle ico
+57x57   favicon-57.png           Standard iOS home screen (iPod Touch, iPhone first generation to 3G)
+71x71   SmallTile.scale-100.png	 Small Windows 10 Start tile asset
+76x76   favicon-76.png           iPad home screen icon
+96x96   favicon-96.png           GoogleTV icon
+120x120 favicon-120.png          iPhone retina touch icon (Change for iOS 7: up from 114x114)
+128x128 favicon-128.png          Chrome Web Store icon
+152x152 favicon-152.png          iPad retina touch icon (Change for iOS 7: up from 144x144)
+180x180 favicon-180.png          iPhone 6 plus
+195x195 favicon-195.png          Opera Speed Dial icon (Not working in Opera 15 and later)
+196x196 favicon-196.png          Chrome for Android home screen icon
+228x228 favicon-228.png          Opera Coast icon
+150x150	MediumTile.scale-100.png Medium Windows 10 Start tile asset
+310x150	WideTile.scale-100.png	 Wide Windows 10 Start tile asset
+310x310	LargeTile.scale-100.png	 Large Windows 10 Start tile asset
+======= ======================== =======================================================================
 
 ICO File
 --------
 
 An .ico file is a container for multiple .bmp or .png icons of different sizes.
-In favicon.ico, create at least these:
+In favicon.ico, create at least these.
+Most of these are strongly recommend for Windows 10 and legacy version support [4]_:
 
 ======= =======================================================================
 Size    Purpose
 ======= =======================================================================
 16x16   IE9 address bar, Pinned site Jump List/Toolbar/Overlay
-32x32   New tab page in IE, taskbar button in Win 7+, Safari Read Later sidebar
-48x48   Windows site icons [4]_
-======= =======================================================================
-
-If you're obsessive and don't mind 1-3kb extra size, also include these sizes
-in your .ico:
-
-======= =======================================================================
-Size    Purpose
-======= =======================================================================
 24x24   IE9 Pinned site browser UI
-64x64   Windows site icons [4]_, Safari Reading List sidebar in HiDPI/Retina
+32x32   New tab page in IE, taskbar button in Win 7 and 8, Safari Read Later sidebar
+48x48   Windows site icons [4]_
+64x64   Safari Reading List sidebar in HiDPI/Retina
+256x256 Windows 10 high DPI targed-based asset [6]_
 ======= =======================================================================
 
-Create your .ico out of optimized .png files.
+Create your .ico out of optimized .png files. *See tools below that may help you accomplish that.*
 
 TODO: get confirmation that IE9+ supports .ico files that contain .png files (issue `#9`_)
 
@@ -202,9 +195,11 @@ Helpful Tools
 
 I recommend:
 
-1. OptiPNG, to optimize .png files before putting them into an .ico: http://optipng.sourceforge.net/
-2. ImageMagick, to create an .ico from .png files: http://blog.morzproject.com/convert-multiple-png-images-into-a-single-icon-file/ & http://www.imagemagick.org/Usage/thumbnails/#favicon
-
+1. `TinyPNG <https://tinypng.com/>`_ - Compress PNGs and preserving transparency. Photoshop plug-in too.
+2. `Iconboard for Sketch <http://designplugins.com/iconboard>`_ - Create optimized icons with multiple sizes right in Sketch, including multi-size .ico files.
+3. `OptiPNG <http://optipng.sourceforge.net/>`_ - to optimize .png files before putting them into an .ico.
+4. `RealFaviconGenerator <http://realfavicongenerator.net>`_ - Favicon generator for all platforms
+5. `ImageMagick <http://www.imagemagick.org/Usage/thumbnails/#favicon>`_ - to create an .ico from .png files.
     .. code-block:: bash
 
         $ convert favicon-16.png favicon-32.png favicon.ico
@@ -323,5 +318,6 @@ References
 .. [1] http://mathiasbynens.be/notes/rel-shortcut-icon
 .. [2] http://www.w3.org/TR/html5/links.html#rel-icon
 .. [3] Adapted from http://mathiasbynens.be/notes/touch-icons
-.. [4] No specifics given by MSDN.
+.. [4] Recommended sizes for scale-based assets (Windows 10 tiles and legacy): https://msdn.microsoft.com/en-us/windows/uwp/controls-and-patterns/tiles-and-notifications-app-assets?f=255&MSPPError=-2147217396#asset-size-tables
 .. [5] http://blog.morzproject.com/convert-multiple-png-images-into-a-single-icon-file/
+.. [6] Windows 10 and legacy asset types list, their uses, and recommended file names: https://msdn.microsoft.com/en-us/windows/uwp/controls-and-patterns/tiles-and-notifications-app-assets?f=255&MSPPError=-2147217396#asset-types
