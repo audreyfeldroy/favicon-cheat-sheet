@@ -109,6 +109,8 @@ If you're obsessive, you want all this too:
         <link rel="icon" href="/path/to/favicon-32.png" sizes="32x32">
 3. Favicon Chrome for Android
 
+    .. code-block:: html
+
         <link rel="shortcut icon" sizes="196x196" href="/path/to/favicon-196.png">
         
 The Images
@@ -195,7 +197,7 @@ Pinned tabs in Safari 9+ use an SVG vector mask for the favicon instead of any o
 
     .. code-block:: html
     
-    <link rel='mask-icon' href='icon.svg' color='#ff0000'>
+    	<link rel='mask-icon' href='icon.svg' color='#ff0000'>
 
 Helpful Tools
 -------------
