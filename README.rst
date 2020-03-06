@@ -317,7 +317,10 @@ Contribute!
 -----------
 
 Send pull requests if you have anything to add/change, providing citations
-and justification. I'd love to see this improve.
+and justification. I'd love to see this improve. 
+
+Note on March 6, 2020: I'm behind on merging PRs but am slowly catching up. 
+Bear with me while I get this repo caught up. ❤️
 
 References
 ----------
