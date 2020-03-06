@@ -35,7 +35,7 @@ You probably also want the following:
 
     .. code-block:: html
 
-        <link rel="apple-touch-icon-precomposed" href="path/to/favicon-152.png">
+        <link rel="apple-touch-icon-precomposed" href="path/to/favicon-180.png">
    
 2. IE 10 Metro tile icon (Metro equivalent of apple-touch-icon):
 
@@ -131,7 +131,7 @@ If you also sort of care about iOS and Android but are lazy:
 ======= =============== =======================================================================
 Size    Name            Purpose
 ======= =============== =======================================================================
-152x152 favicon-152.png General use iOS/Android icon, auto-downscaled by devices.
+180x180 favicon-180.png General use iOS/Android icon, auto-downscaled by devices.
 ======= =============== =======================================================================
 
 But keep in mind that icons with complex detail often don't downscale well.
