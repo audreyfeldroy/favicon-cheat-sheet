@@ -148,7 +148,7 @@ Size    Name            Purpose
 96x96   favicon-96.png  GoogleTV icon
 120x120 favicon-120.png iPhone retina touch icon (Change for iOS 7: up from 114x114)
 128x128 favicon-128.png Chrome Web Store icon
-128x128	smalltile.png	Small Windows 8 Star Screen Icon
+128x128	smalltile.png	Small Windows 8 Start Screen Icon
 144x144 favicon-144.png IE10 Metro tile for pinned site
 152x152 favicon-152.png iPad retina touch icon (Change for iOS 7: up from 144x144)
 180x180 favicon-180.png iPhone 6 plus
