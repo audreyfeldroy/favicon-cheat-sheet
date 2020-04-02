@@ -11,7 +11,7 @@ A painfully obsessive cheat sheet to favicon sizes/types. Compiled from:
 * http://www.netmagazine.com/features/create-perfect-favicon
 * http://www.ravelrumba.com/blog/android-apple-touch-icon/
 * http://msdn.microsoft.com/en-us/library/ie/gg491740(v=vs.85).aspx
-* https://developer.apple.com/library/mac/releasenotes/General/WhatsNewInSafari/Articles/Safari_9.html#//apple_ref/doc/uid/TP40014305-CH9-SW20
+* https://developer.apple.com/library/archive/releasenotes/General/WhatsNewInSafari/Articles/Safari_9_0.html#//apple_ref/doc/uid/TP40014305-CH9-SW20
 
 .. _`@mathiasbynens`: https://github.com/mathiasbynens
 
