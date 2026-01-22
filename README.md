@@ -231,7 +231,7 @@ TODO: get confirmation that IE9+ supports .ico files that contain .png files ([i
 I recommend:
 
 1. OptiPNG, to optimize .png files before putting them into an .ico: http://optipng.sourceforge.net/
-2. ImageMagick, to create an .ico from .png files: http://blog.morzproject.com/convert-multiple-png-images-into-a-single-icon-file/ & http://www.imagemagick.org/Usage/thumbnails/#favicon
+2. ImageMagick, to create an .ico from .png files: https://blog.morzproject.com/convert-multiple-png-images-into-a-single-icon-file/ & http://www.imagemagick.org/Usage/thumbnails/#favicon
 
     ```bash
     convert favicon-16.png favicon-32.png favicon.ico
