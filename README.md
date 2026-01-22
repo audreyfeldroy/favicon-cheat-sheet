@@ -1,6 +1,6 @@
 # favicon-cheat-sheet
 
-A painfully obsessive cheat sheet to favicon sizes/types.
+A comprehensive cheat sheet to favicon sizes/types.
 
 ## Modern Minimum (2024+)
 
@@ -112,9 +112,9 @@ You probably also want the following:
         </browserconfig>
     ```
 
-### Very Optional, for the Obsessive
+### Legacy Browser Support
 
-If you're obsessive, you want all this too:
+For older browsers and full platform coverage:
 
 1. Largest to smallest apple-touch-icons [^3]:
 
@@ -182,7 +182,7 @@ If you also sort of care about iOS and Android but are lazy:
 
 But keep in mind that icons with complex detail often don't downscale well. Often you have to tweak subtle design details for smaller sizes.
 
-If you're obsessive, create these too:
+For full legacy support, create these too:
 
 | Size | Name | Purpose |
 |------|------|---------|
@@ -215,7 +215,7 @@ An .ico file is a container for multiple .bmp or .png icons of different sizes. 
 | 32x32 | New tab page in IE, taskbar button in Win 7+, Safari Read Later sidebar |
 | 48x48 | Windows site icons [^4] |
 
-If you're obsessive and don't mind 1-3kb extra size, also include these sizes in your .ico:
+For full legacy support (adds 1-3kb to file size), also include these sizes in your .ico:
 
 | Size | Purpose |
 |------|---------|
