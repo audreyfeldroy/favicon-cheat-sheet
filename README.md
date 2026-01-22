@@ -1,6 +1,25 @@
 # favicon-cheat-sheet
 
-A painfully obsessive cheat sheet to favicon sizes/types. Compiled from:
+A painfully obsessive cheat sheet to favicon sizes/types.
+
+## Modern Minimum (2024+)
+
+For new projects, this covers 99% of use cases:
+
+```html
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png"><!-- 180x180 -->
+<link rel="manifest" href="/manifest.json">
+```
+
+Your `manifest.json` should include 192x192 and 512x512 icons for PWA support. That's it. Read on for legacy browser support and the full history.
+
+---
+
+## Sources
+
+Compiled from:
 
 * http://mathiasbynens.be/notes/rel-shortcut-icon <-- special thanks [@mathiasbynens](https://github.com/mathiasbynens)
 * http://mathiasbynens.be/notes/touch-icons <-- special thanks [@mathiasbynens](https://github.com/mathiasbynens)
