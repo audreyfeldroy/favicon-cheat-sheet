@@ -13,7 +13,36 @@ For new projects, this covers 99% of use cases:
 <link rel="manifest" href="/manifest.json">
 ```
 
+**Dark mode support:** Your SVG can adapt to light/dark mode. See [SVG Favicons and Dark Mode](#svg-favicons-and-dark-mode) below.
+
 Your `manifest.json` should include 192x192 and 512x512 icons for PWA support. That's it. Read on for legacy browser support and the full history.
+
+---
+
+## SVG Favicons and Dark Mode
+
+One of the beautiful things about SVG favicons is that they can contain embedded CSS, including media queries. This means your favicon can automatically adapt to the user's light or dark mode preference:
+
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <style>
+    .icon { fill: #1a1a1a; }
+    @media (prefers-color-scheme: dark) {
+      .icon { fill: #ffffff; }
+    }
+  </style>
+  <circle class="icon" cx="16" cy="16" r="14"/>
+</svg>
+```
+
+The `prefers-color-scheme` media query works inside the SVG file, so no JavaScript is needed. The browser handles the switch automatically when the user changes their system appearance.
+
+**Browser support:** This works in all browsers that support SVG favicons (Chrome, Firefox, Edge, Safari 15+). The `.ico` fallback handles older browsers, which typically don't support dark mode system preferences anyway.
+
+**Tips:**
+- Keep your SVG simple. Complex gradients and filters add file size and can cause rendering issues at small sizes.
+- Test both modes. What looks great in light mode might lose contrast in dark mode.
+- Consider using `currentColor` if your SVG is simple enough, though explicit colors give you more control.
 
 ---
 
