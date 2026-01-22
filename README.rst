@@ -8,7 +8,7 @@ A painfully obsessive cheat sheet to favicon sizes/types. Compiled from:
 * http://www.jonathantneal.com/blog/understand-the-favicon/
 * https://en.wikipedia.org/wiki/Favicon.ico
 * http://snook.ca/archives/design/making_a_good_favicon
-* http://www.netmagazine.com/features/create-perfect-favicon
+* http://www.creativebloq.com/illustrator/create-perfect-favicon-12112760
 * http://www.ravelrumba.com/blog/android-apple-touch-icon/
 * http://msdn.microsoft.com/en-us/library/ie/gg491740(v=vs.85).aspx
 * https://developer.apple.com/library/archive/releasenotes/General/WhatsNewInSafari/Articles/Safari_9_0.html#//apple_ref/doc/uid/TP40014305-CH9-SW20
@@ -82,8 +82,9 @@ If you're obsessive, you want all this too:
 1. Largest to smallest apple-touch-icons [3]_:
 
     .. code-block:: html
-		<!-- For Iphone 6 plus running iOS 8: -->
-		<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/path/to/favicon-180.png">
+
+        <!-- For Iphone 6 plus running iOS 8: -->
+        <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/path/to/favicon-180.png">
 
         <!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
         <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/path/to/favicon-152.png">
@@ -157,16 +158,16 @@ Size    Name            Purpose
 96x96   favicon-96.png  GoogleTV icon
 120x120 favicon-120.png iPhone retina touch icon (Change for iOS 7: up from 114x114)
 128x128 favicon-128.png Chrome Web Store icon
-128x128	smalltile.png	Small Windows 8 Star Screen Icon
+128x128 smalltile.png   Small Windows 8 Star Screen Icon
 144x144 favicon-144.png IE10 Metro tile for pinned site
 152x152 favicon-152.png iPad retina touch icon (Change for iOS 7: up from 144x144)
 180x180 favicon-180.png iPhone 6 plus
 195x195 favicon-195.png Opera Speed Dial icon (Not working in Opera 15 and later)
 196x196 favicon-196.png Chrome for Android home screen icon
 228x228 favicon-228.png Opera Coast icon
-270x270	mediumtile.png	Medium Windows 8 Start Screen Icon
-558x270	widetile.png	Wide Windows 8 Start Screen Icon
-558x558	largetile.png	Large Windows 8 Start Screen Icon
+270x270 mediumtile.png  Medium Windows 8 Start Screen Icon
+558x270 widetile.png    Wide Windows 8 Start Screen Icon
+558x558 largetile.png   Large Windows 8 Start Screen Icon
 N/A     mask-icon.svg   Safari pinned tab icon; black on transparent SVG
 ======= =============== =======================================================================
 
@@ -226,6 +227,9 @@ Others that I haven't tried:
 * Favic-o-matic: http://www.favicomatic.com - A favicon generator that cares of .ico, .png and HTML code to make your website shine on every platform, browser or device
 * Ubuntu/Debian package `icoutil` (Fedora package `icoutils`_) provides the program `icotool` which creates .ico from .png files.
 * MSDN recommends this web-based .ico creator: http://www.xiconeditor.com
+* RealFaviconGenerator: https://realfavicongenerator.net/ - creates favicons for all browsers and all platforms from any image. Allows you to preview what the favicon looks like on various platforms as well as choose compression and scaling options.
+* Node favicon generator: https://github.com/haydenbleasel/favicons - creates all favicons from a .png, supports offline creation for many, and online creation for the rest using RealFaviconGenerator API
+* Favicons Webpack Plugin: https://github.com/jantimon/favicons-webpack-plugin - Uses the Node favicon generator to create all your favicons during build -- can even insert the HTML for you automatically with html-webpack-plugin
 * Resize favicons: http://faviconer.com
 * More resizing: https://github.com/abrkn/icon
 * Dynamically setting favicons: https://github.com/HenrikJoreteg/favicon-setter
