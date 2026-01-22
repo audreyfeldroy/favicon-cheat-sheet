@@ -13,15 +13,19 @@ For new projects, this covers 99% of use cases:
 <link rel="manifest" href="/manifest.json">
 ```
 
-**Dark mode support:** Your SVG can adapt to light/dark mode. See [SVG Favicons and Dark Mode](#svg-favicons-and-dark-mode) below.
+**Dark mode support:** Your SVG can adapt to light/dark mode. See [SVG Favicons](#svg-favicons) below.
 
 Your `manifest.json` should include 192x192 and 512x512 icons for PWA support. That's it. Read on for legacy browser support and the full history.
 
 ---
 
-## SVG Favicons and Dark Mode
+## SVG Favicons
 
-One of the beautiful things about SVG favicons is that they can contain embedded CSS, including media queries. This means your favicon can automatically adapt to the user's light or dark mode preference:
+Modern browsers support SVG favicons, which offer two key advantages: infinite scalability and the ability to respond to user preferences like dark mode.
+
+### Dark Mode Support
+
+SVG favicons can contain embedded CSS, including media queries. This means your favicon can automatically adapt to the user's light or dark mode preference:
 
 ```svg
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
@@ -37,12 +41,22 @@ One of the beautiful things about SVG favicons is that they can contain embedded
 
 The `prefers-color-scheme` media query works inside the SVG file, so no JavaScript is needed. The browser handles the switch automatically when the user changes their system appearance.
 
-**Browser support:** This works in all browsers that support SVG favicons (Chrome, Firefox, Edge, Safari 15+). The `.ico` fallback handles older browsers, which typically don't support dark mode system preferences anyway.
+**Browser support:** Chrome, Firefox, Edge, and Safari 15+ all support SVG favicons. The `.ico` fallback handles older browsers, which typically don't support dark mode system preferences anyway.
 
 **Tips:**
 - Keep your SVG simple. Complex gradients and filters add file size and can cause rendering issues at small sizes.
 - Test both modes. What looks great in light mode might lose contrast in dark mode.
 - Consider using `currentColor` if your SVG is simple enough, though explicit colors give you more control.
+
+### Safari Pinned Tab Icons (Safari 9-14)
+
+Safari 9 through 14 used a separate "mask icon" for pinned tabs instead of the regular favicon. This requires a black-only SVG (no shades of gray or other colors) with a transparent background:
+
+```html
+<link rel="mask-icon" href="/mask-icon.svg" color="#ff0000">
+```
+
+The `color` attribute defines the fill color when displayed. Safari 15+ uses the standard SVG favicon instead, so mask icons are only needed for legacy Safari support.
 
 ---
 
@@ -211,14 +225,6 @@ If you're obsessive and don't mind 1-3kb extra size, also include these sizes in
 Create your .ico out of optimized .png files.
 
 TODO: get confirmation that IE9+ supports .ico files that contain .png files ([issue #9](https://github.com/audreyr/favicon-cheat-sheet/issues/9))
-
-## SVG File
-
-Pinned tabs in Safari 9+ use an SVG vector mask for the favicon instead of any other PNG/ICO/etc. favicons that may be present. Vector artwork in the SVG file should be black only (no shades of black or other colors) with a transparent background. Also, a fill color needs to be defined in the `<link>` tag - a hex value or color shorthand will work. Here's the markup for adding the icon:
-
-```html
-<link rel='mask-icon' href='icon.svg' color='#ff0000'>
-```
 
 ## Helpful Tools
 
