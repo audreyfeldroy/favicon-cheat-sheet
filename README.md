@@ -17,19 +17,6 @@ Your `manifest.json` should include 192x192 and 512x512 icons for PWA support. T
 
 ---
 
-## Sources
-
-Compiled from:
-
-* http://mathiasbynens.be/notes/rel-shortcut-icon <-- special thanks [@mathiasbynens](https://github.com/mathiasbynens)
-* http://mathiasbynens.be/notes/touch-icons <-- special thanks [@mathiasbynens](https://github.com/mathiasbynens)
-* https://en.wikipedia.org/wiki/Favicon.ico
-* http://snook.ca/archives/design/making_a_good_favicon
-* http://www.creativebloq.com/illustrator/create-perfect-favicon-12112760
-* http://www.ravelrumba.com/blog/android-apple-touch-icon/
-* http://msdn.microsoft.com/en-us/library/ie/gg491740(v=vs.85).aspx
-* https://developer.apple.com/library/archive/releasenotes/General/WhatsNewInSafari/Articles/Safari_9_0.html#//apple_ref/doc/uid/TP40014305-CH9-SW20
-
 ## The HTML
 
 ### Basics
@@ -313,6 +300,17 @@ Some proxies and load balancers can fail to read query strings in edge cases.
 ## Contribute!
 
 Send pull requests if you have anything to add/change, providing citations and justification. I'd love to see this improve.
+
+## Sources
+
+* http://mathiasbynens.be/notes/rel-shortcut-icon <-- special thanks [@mathiasbynens](https://github.com/mathiasbynens)
+* http://mathiasbynens.be/notes/touch-icons <-- special thanks [@mathiasbynens](https://github.com/mathiasbynens)
+* https://en.wikipedia.org/wiki/Favicon.ico
+* http://snook.ca/archives/design/making_a_good_favicon
+* http://www.creativebloq.com/illustrator/create-perfect-favicon-12112760
+* http://www.ravelrumba.com/blog/android-apple-touch-icon/
+* http://msdn.microsoft.com/en-us/library/ie/gg491740(v=vs.85).aspx
+* https://developer.apple.com/library/archive/releasenotes/General/WhatsNewInSafari/Articles/Safari_9_0.html#//apple_ref/doc/uid/TP40014305-CH9-SW20
 
 ## References
 
