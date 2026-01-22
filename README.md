@@ -343,8 +343,6 @@ Send pull requests if you have anything to add/change, providing citations and j
 [^3]: Adapted from http://mathiasbynens.be/notes/touch-icons
 [^4]: No specifics given by MSDN.
 
-Special thanks to [@mathiasbynens](https://github.com/mathiasbynens) for his foundational research on favicons and touch icons.
-
 ### Further Reading
 
 * https://en.wikipedia.org/wiki/Favicon.ico
