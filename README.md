@@ -336,20 +336,20 @@ Some proxies and load balancers can fail to read query strings in edge cases.
 
 Send pull requests if you have anything to add/change, providing citations and justification. I'd love to see this improve.
 
-## Sources
-
-* http://mathiasbynens.be/notes/rel-shortcut-icon <-- special thanks [@mathiasbynens](https://github.com/mathiasbynens)
-* http://mathiasbynens.be/notes/touch-icons <-- special thanks [@mathiasbynens](https://github.com/mathiasbynens)
-* https://en.wikipedia.org/wiki/Favicon.ico
-* http://snook.ca/archives/design/making_a_good_favicon
-* http://www.creativebloq.com/illustrator/create-perfect-favicon-12112760
-* http://www.ravelrumba.com/blog/android-apple-touch-icon/
-* http://msdn.microsoft.com/en-us/library/ie/gg491740(v=vs.85).aspx
-* https://developer.apple.com/library/archive/releasenotes/General/WhatsNewInSafari/Articles/Safari_9_0.html#//apple_ref/doc/uid/TP40014305-CH9-SW20
-
 ## References
 
 [^1]: http://mathiasbynens.be/notes/rel-shortcut-icon
 [^2]: http://www.w3.org/TR/html5/links.html#rel-icon
 [^3]: Adapted from http://mathiasbynens.be/notes/touch-icons
 [^4]: No specifics given by MSDN.
+
+Special thanks to [@mathiasbynens](https://github.com/mathiasbynens) for his foundational research on favicons and touch icons.
+
+### Further Reading
+
+* https://en.wikipedia.org/wiki/Favicon.ico
+* http://snook.ca/archives/design/making_a_good_favicon
+* http://www.creativebloq.com/illustrator/create-perfect-favicon-12112760
+* http://www.ravelrumba.com/blog/android-apple-touch-icon/
+* http://msdn.microsoft.com/en-us/library/ie/gg491740(v=vs.85).aspx
+* https://developer.apple.com/library/archive/releasenotes/General/WhatsNewInSafari/Articles/Safari_9_0.html
