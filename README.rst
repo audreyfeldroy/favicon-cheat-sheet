@@ -86,6 +86,9 @@ If you're obsessive, you want all this too:
         <!-- For Iphone 6 plus running iOS 8: -->
         <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/path/to/favicon-180.png">
 
+        <!-- For iPad Pro: -->
+        <link rel="apple-touch-icon-precomposed" sizes="167x167" href="/path/to/favicon-167.png">
+
         <!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
         <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/path/to/favicon-152.png">
 
@@ -113,7 +116,7 @@ If you're obsessive, you want all this too:
 
     .. code-block:: html
 
-        <link rel="shortcut icon" sizes="196x196" href="/path/to/favicon-196.png">
+        <link rel="shortcut icon" sizes="192x192" href="/path/to/favicon-192.png">
 
 4. Safari 9.0+ pinned tab icons:
 
@@ -161,9 +164,10 @@ Size    Name            Purpose
 128x128 smalltile.png   Small Windows 8 Star Screen Icon
 144x144 favicon-144.png IE10 Metro tile for pinned site
 152x152 favicon-152.png iPad retina touch icon (Change for iOS 7: up from 144x144)
+167x167 favicon-167.png iPad Pro touch icon
 180x180 favicon-180.png iPhone 6 plus
 195x195 favicon-195.png Opera Speed Dial icon (Not working in Opera 15 and later)
-196x196 favicon-196.png Chrome for Android home screen icon
+192x192 favicon-192.png Chrome for Android home screen icon
 228x228 favicon-228.png Opera Coast icon
 270x270 mediumtile.png  Medium Windows 8 Start Screen Icon
 558x270 widetile.png    Wide Windows 8 Start Screen Icon
@@ -222,6 +226,12 @@ I recommend:
 
         $ convert favicon-16.png favicon-32.png favicon.ico
 
+   Or to create a favicon.ico with multiple sizes from a single source image:
+
+    .. code-block:: bash
+
+        $ convert favicon-256.png -resize 256x256 -define icon:auto-resize=256,128,96,64,48,32,16 favicon.ico
+
 Others that I haven't tried:
 
 * Favic-o-matic: http://www.favicomatic.com - A favicon generator that cares of .ico, .png and HTML code to make your website shine on every platform, browser or device
@@ -249,6 +259,7 @@ Not normally needed. This is only for those frustrating times when you can't
 get your favicon to refresh, during development:
 
 * Clear the browser cache on Windows (Ctrl+F5 or Ctrl+Shift+R) and on Mac (Command + Shift + R).
+* Also go directly to the favicon URL (e.g. http://example.com/favicon.ico) and refresh there.
 * Also close and reopen browser if IE.
 * If still stuck, try opening new tab. Or see http://stackoverflow.com/questions/2208933/how-do-i-force-a-favicon-refresh
 * Temporarily add explicit HTML markup and append a query string. Remove
