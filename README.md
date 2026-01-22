@@ -4,7 +4,6 @@ A painfully obsessive cheat sheet to favicon sizes/types. Compiled from:
 
 * http://mathiasbynens.be/notes/rel-shortcut-icon <-- special thanks [@mathiasbynens](https://github.com/mathiasbynens)
 * http://mathiasbynens.be/notes/touch-icons <-- special thanks [@mathiasbynens](https://github.com/mathiasbynens)
-* http://www.jonathantneal.com/blog/understand-the-favicon/
 * https://en.wikipedia.org/wiki/Favicon.ico
 * http://snook.ca/archives/design/making_a_good_favicon
 * http://www.creativebloq.com/illustrator/create-perfect-favicon-12112760
@@ -206,8 +205,8 @@ I recommend:
 Others that I haven't tried:
 
 * [Favic-o-matic](http://www.favicomatic.com) - A favicon generator that cares of .ico, .png and HTML code to make your website shine on every platform, browser or device
-* Ubuntu/Debian package `icoutil` (Fedora package [icoutils](https://apps.fedoraproject.org/packages/icoutils)) provides the program `icotool` which creates .ico from .png files.
-* MSDN recommends this web-based .ico creator: http://www.xiconeditor.com
+* Ubuntu/Debian package `icoutil` (Fedora package [icoutils](https://packages.fedoraproject.org/pkgs/icoutils/icoutils/)) provides the program `icotool` which creates .ico from .png files.
+* MSDN recommends this web-based .ico creator: https://xiconeditor.com
 * [RealFaviconGenerator](https://realfavicongenerator.net/) - creates favicons for all browsers and all platforms from any image. Allows you to preview what the favicon looks like on various platforms as well as choose compression and scaling options.
 * [Node favicon generator](https://github.com/haydenbleasel/favicons) - creates all favicons from a .png, supports offline creation for many, and online creation for the rest using RealFaviconGenerator API
 * [Favicons Webpack Plugin](https://github.com/jantimon/favicons-webpack-plugin) - Uses the Node favicon generator to create all your favicons during build -- can even insert the HTML for you automatically with html-webpack-plugin
