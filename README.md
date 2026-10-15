@@ -249,6 +249,7 @@ Others that I haven't tried:
 * Ubuntu/Debian package `icoutil` (Fedora package [icoutils](https://packages.fedoraproject.org/pkgs/icoutils/icoutils/)) provides the program `icotool` which creates .ico from .png files.
 * MSDN recommends this web-based .ico creator: https://xiconeditor.com
 * [RealFaviconGenerator](https://realfavicongenerator.net/) - creates favicons for all browsers and all platforms from any image. Allows you to preview what the favicon looks like on various platforms as well as choose compression and scaling options.
+* [FaviconDL](https://favicondl.com) - free online tool + no-key API to extract a site's existing favicon (SVG/PNG/ICO) by URL, with JSON metadata and fallbacks
 * [Node favicon generator](https://github.com/haydenbleasel/favicons) - creates all favicons from a .png, supports offline creation for many, and online creation for the rest using RealFaviconGenerator API
 * [Favicons Webpack Plugin](https://github.com/jantimon/favicons-webpack-plugin) - Uses the Node favicon generator to create all your favicons during build -- can even insert the HTML for you automatically with html-webpack-plugin
 * Resize favicons: http://faviconer.com
