@@ -246,6 +246,7 @@ I recommend:
 Others that I haven't tried:
 
 * [Favic-o-matic](http://www.favicomatic.com) - A favicon generator that cares of .ico, .png and HTML code to make your website shine on every platform, browser or device
+* [Favikit](https://arnavjhajharia.github.io/favikit/) - MIT in-browser favicon generator (PNG, ICO, SVG, apple-touch-icon, web manifest snippets). Runs entirely in the browser; nothing is uploaded. [Source on GitHub](https://github.com/arnavjhajharia/favikit).
 * Ubuntu/Debian package `icoutil` (Fedora package [icoutils](https://packages.fedoraproject.org/pkgs/icoutils/icoutils/)) provides the program `icotool` which creates .ico from .png files.
 * MSDN recommends this web-based .ico creator: https://xiconeditor.com
 * [RealFaviconGenerator](https://realfavicongenerator.net/) - creates favicons for all browsers and all platforms from any image. Allows you to preview what the favicon looks like on various platforms as well as choose compression and scaling options.
